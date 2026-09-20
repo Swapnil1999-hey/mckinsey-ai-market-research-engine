@@ -4,7 +4,7 @@ import {BarChart3,BookOpen,BrainCircuit,CheckCircle2,ChevronDown,ChevronRight,Cl
 
 type Job={id:string;title:string;status:string;progress:number;sources:number};
 type DatasetOverview={requests:number;sources:number;evidence:number;validated_evidence:number;completed:number;running:number;pending:number;needs_review:number;avg_confidence:number;top_topics:any[];top_entities:any[];evidence_by_year:any[];market_metrics:any[];demo?:boolean};
-const API='http://localhost:8000';
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const initialJobs:Job[]=[{id:'job-104',title:'Global EV Market Trends 2025',status:'Completed',progress:100,sources:12},{id:'job-103',title:'AI in Healthcare Industry Analysis',status:'Running',progress:45,sources:8},{id:'job-102',title:'Competitor Landscape',status:'Pending',progress:0,sources:0}];
 const agents=[['Planner Agent','Creates research plan and strategy','Working'],['Browser Agent','Navigates web and collects sources','Active'],['Extractor Agent','Extracts structured data from sources','Active'],['Validator Agent','Verifies facts and cross-checks evidence','Active'],['Report Writer Agent','Creates final report with citations','Waiting']];
 const stages=['intake','planning','browsing','extraction','validation','aggregation','report_generation','review'];
