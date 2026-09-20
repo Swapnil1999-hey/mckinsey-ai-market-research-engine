@@ -1,0 +1,9 @@
+# API
+POST /api/research-jobs
+POST /api/research-plan
+POST /api/browse
+POST /api/extract-evidence
+POST /api/validate-evidence
+POST /api/generate-report
+GET /api/reports/{job_id}
+POST /api/feedback

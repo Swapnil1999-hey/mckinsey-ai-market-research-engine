@@ -1,0 +1,501 @@
+request_id,query,market,geography,timeframe,competitors,output_format,report_depth,status
+req-0001,Assess industrial automation working capital in Southeast Asia from 2023 to 2026,Industrial Automation,Southeast Asia,2023-2026,"Rockwell Automation, Honeywell, Schneider Electric, Siemens, ABB",internal review,deep dive,pending
+req-0002,Analyze renewable energy competitive landscape and market size in United States,Renewable Energy,United States,2023-2026,"NTPC, ReNew",workshop,standard,pending
+req-0003,Analyze automotive competitive landscape and product launches in Japan,Automotive,Japan,2024-2026,"BMW, Toyota, Tesla, Hyundai, Volkswagen",proposal,standard,pending
+req-0004,Evaluate cloud computing market entry and growth opportunities in United States,Cloud Computing,United States,2024-2026,"AWS, Google Cloud, Oracle, IBM",proposal,detailed,completed
+req-0005,Assess industrial automation partnerships in Australia from 2023 to 2026,Industrial Automation,Australia,2023-2026,"Siemens, Honeywell, Schneider Electric",internal review,standard,running
+req-0006,"Monitor generative ai trends, risks and strategic implications for Canada",Generative AI,Canada,2024-2026,"Google, OpenAI, Microsoft, Meta, Anthropic",strategy brief,standard,completed
+req-0007,Assess healthcare technology working capital in Japan from 2025 to 2026,Healthcare Technology,Japan,2025-2026,"Philips, Siemens Healthineers, GE HealthCare",strategy brief,detailed,completed
+req-0008,Assess renewable energy customer behavior in Australia from 2025 to 2026,Renewable Energy,Australia,2025-2026,"Adani Green, NTPC",strategy brief,detailed,pending
+req-0009,Analyze renewable energy competitive landscape and supply chain in Global,Renewable Energy,Global,2025-2026,"Siemens Gamesa, ReNew, NTPC, Vestas, Adani Green",proposal,standard,running
+req-0010,"Monitor industrial automation trends, risks and strategic implications for Middle East",Industrial Automation,Middle East,2023-2026,"Rockwell Automation, Honeywell, Siemens, Schneider Electric",workshop,detailed,completed
+req-0011,Evaluate renewable energy market entry and growth opportunities in Global,Renewable Energy,Global,2022-2026,"Adani Green, Vestas, NTPC, Siemens Gamesa, ReNew",internal review,detailed,pending
+req-0012,Assess electric vehicles supply chain in Australia from 2023 to 2026,Electric Vehicles,Australia,2023-2026,"Tata Motors, MG Motor India, BYD",proposal,deep dive,pending
+req-0013,Evaluate cloud computing market entry and growth opportunities in Global,Cloud Computing,Global,2022-2026,"Google Cloud, IBM, Microsoft Azure, Oracle",strategy brief,deep dive,pending
+req-0014,Assess fintech partnerships in Middle East from 2024 to 2026,FinTech,Middle East,2024-2026,"Razorpay, Adyen, PhonePe, PayPal",internal review,standard,completed
+req-0015,Assess e-commerce product launches in United States from 2024 to 2026,E-commerce,United States,2024-2026,"Alibaba, Walmart, Shopify",strategy brief,standard,completed
+req-0016,Assess industrial automation pricing & demand in United Kingdom from 2022 to 2026,Industrial Automation,United Kingdom,2022-2026,"Rockwell Automation, Honeywell, Siemens",workshop,standard,pending
+req-0017,Assess logistics customer behavior in Australia from 2023 to 2026,Logistics,Australia,2023-2026,"DHL, UPS, Maersk",proposal,detailed,completed
+req-0018,Analyze cybersecurity competitive landscape and risk & exposure in Middle East,Cybersecurity,Middle East,2022-2026,"Microsoft, Cisco, Fortinet",internal review,standard,pending
+req-0019,Analyze automotive competitive landscape and working capital in Japan,Automotive,Japan,2025-2026,"Volkswagen, Hyundai",workshop,detailed,completed
+req-0020,"Monitor banking trends, risks and strategic implications for Australia",Banking,Australia,2025-2026,"HSBC, HDFC Bank, ICICI Bank, DBS, JPMorgan Chase",workshop,detailed,running
+req-0021,Analyze telecom competitive landscape and supply chain in Australia,Telecom,Australia,2025-2026,"AT&T, Verizon",workshop,standard,completed
+req-0022,Evaluate fintech market entry and growth opportunities in Australia,FinTech,Australia,2023-2026,"Stripe, Razorpay, PhonePe, Adyen, PayPal",workshop,deep dive,completed
+req-0023,"Monitor electric vehicles trends, risks and strategic implications for Canada",Electric Vehicles,Canada,2023-2026,"Tata Motors, Mahindra, Hyundai, MG Motor India, BYD",proposal,deep dive,completed
+req-0024,"Monitor cloud computing trends, risks and strategic implications for Japan",Cloud Computing,Japan,2024-2026,"Oracle, AWS, Google Cloud, Microsoft Azure",workshop,deep dive,pending
+req-0025,Assess semiconductors market growth in Australia from 2025 to 2026,Semiconductors,Australia,2025-2026,"Samsung, Intel, AMD, NVIDIA, TSMC",proposal,standard,completed
+req-0026,Analyze automotive competitive landscape and customer behavior in Canada,Automotive,Canada,2025-2026,"Toyota, Volkswagen",proposal,standard,running
+req-0027,Evaluate banking market entry and growth opportunities in United States,Banking,United States,2024-2026,"HSBC, HDFC Bank, JPMorgan Chase",proposal,detailed,running
+req-0028,Analyze automotive competitive landscape and risk & exposure in United Kingdom,Automotive,United Kingdom,2022-2026,"Tesla, BMW",internal review,deep dive,completed
+req-0029,"Monitor banking trends, risks and strategic implications for Southeast Asia",Banking,Southeast Asia,2022-2026,"ICICI Bank, HSBC, HDFC Bank",proposal,standard,running
+req-0030,"Monitor generative ai trends, risks and strategic implications for Europe",Generative AI,Europe,2023-2026,"Google, Anthropic, Meta, OpenAI",internal review,standard,completed
+req-0031,Assess generative ai market size in Southeast Asia from 2025 to 2026,Generative AI,Southeast Asia,2025-2026,"Anthropic, Microsoft, Meta, Google",workshop,standard,pending
+req-0032,Evaluate automotive market entry and growth opportunities in Global,Automotive,Global,2022-2026,"Tesla, Hyundai",proposal,detailed,completed
+req-0033,Evaluate automotive market entry and growth opportunities in Australia,Automotive,Australia,2024-2026,"Volkswagen, Hyundai, Tesla",strategy brief,standard,pending
+req-0034,"Monitor e-commerce trends, risks and strategic implications for United Kingdom",E-commerce,United Kingdom,2024-2026,"Flipkart, Walmart, Alibaba, Shopify, Amazon",workshop,deep dive,completed
+req-0035,Evaluate logistics market entry and growth opportunities in Europe,Logistics,Europe,2025-2026,"DHL, UPS, Maersk, FedEx, DP World",proposal,detailed,completed
+req-0036,Evaluate banking market entry and growth opportunities in Japan,Banking,Japan,2022-2026,"HDFC Bank, ICICI Bank",workshop,deep dive,completed
+req-0037,Assess e-commerce product launches in Japan from 2022 to 2026,E-commerce,Japan,2022-2026,"Amazon, Alibaba, Shopify, Flipkart",proposal,standard,completed
+req-0038,"Monitor renewable energy trends, risks and strategic implications for Europe",Renewable Energy,Europe,2025-2026,"ReNew, Vestas, NTPC, Siemens Gamesa",strategy brief,standard,pending
+req-0039,Assess semiconductors market growth in Europe from 2025 to 2026,Semiconductors,Europe,2025-2026,"AMD, TSMC, NVIDIA, Intel",strategy brief,standard,completed
+req-0040,"Monitor e-commerce trends, risks and strategic implications for Japan",E-commerce,Japan,2023-2026,"Walmart, Amazon, Shopify",proposal,deep dive,completed
+req-0041,Evaluate renewable energy market entry and growth opportunities in Europe,Renewable Energy,Europe,2025-2026,"Adani Green, ReNew, Siemens Gamesa, Vestas, NTPC",internal review,standard,pending
+req-0042,Evaluate cybersecurity market entry and growth opportunities in Canada,Cybersecurity,Canada,2025-2026,"Fortinet, Cisco, CrowdStrike",strategy brief,standard,pending
+req-0043,Evaluate generative ai market entry and growth opportunities in Europe,Generative AI,Europe,2022-2026,"Google, OpenAI, Microsoft, Meta, Anthropic",strategy brief,deep dive,completed
+req-0044,"Monitor logistics trends, risks and strategic implications for India",Logistics,India,2025-2026,"DP World, FedEx, DHL, Maersk, UPS",strategy brief,standard,pending
+req-0045,Analyze generative ai competitive landscape and technology adoption in United States,Generative AI,United States,2025-2026,"Google, Meta, Anthropic, Microsoft, OpenAI",workshop,detailed,completed
+req-0046,Evaluate banking market entry and growth opportunities in United Kingdom,Banking,United Kingdom,2022-2026,"HDFC Bank, HSBC, DBS, JPMorgan Chase",proposal,deep dive,pending
+req-0047,Analyze banking competitive landscape and investment trends in Southeast Asia,Banking,Southeast Asia,2022-2026,"HDFC Bank, ICICI Bank, JPMorgan Chase",internal review,standard,completed
+req-0048,"Monitor logistics trends, risks and strategic implications for Middle East",Logistics,Middle East,2024-2026,"DHL, Maersk, UPS, FedEx",internal review,detailed,completed
+req-0049,"Monitor healthcare technology trends, risks and strategic implications for Japan",Healthcare Technology,Japan,2024-2026,"Medtronic, Philips, Siemens Healthineers",strategy brief,standard,completed
+req-0050,Evaluate automotive market entry and growth opportunities in United Kingdom,Automotive,United Kingdom,2025-2026,"Tesla, BMW, Toyota",internal review,standard,completed
+req-0051,"Monitor healthcare technology trends, risks and strategic implications for India",Healthcare Technology,India,2024-2026,"Abbott, GE HealthCare, Medtronic, Siemens Healthineers",workshop,standard,completed
+req-0052,"Monitor cloud computing trends, risks and strategic implications for United States",Cloud Computing,United States,2022-2026,"IBM, Microsoft Azure, Oracle",internal review,standard,running
+req-0053,Analyze healthcare technology competitive landscape and market size in India,Healthcare Technology,India,2022-2026,"Medtronic, Abbott, Siemens Healthineers, Philips, GE HealthCare",strategy brief,detailed,pending
+req-0054,"Monitor banking trends, risks and strategic implications for United States",Banking,United States,2024-2026,"JPMorgan Chase, HDFC Bank, HSBC, ICICI Bank, DBS",internal review,deep dive,completed
+req-0055,Analyze cloud computing competitive landscape and value leakage in India,Cloud Computing,India,2024-2026,"IBM, Google Cloud, Oracle, AWS, Microsoft Azure",proposal,standard,completed
+req-0056,Analyze semiconductors competitive landscape and regulation in Southeast Asia,Semiconductors,Southeast Asia,2022-2026,"AMD, NVIDIA, TSMC, Samsung, Intel",strategy brief,standard,completed
+req-0057,Assess cloud computing customer behavior in Southeast Asia from 2025 to 2026,Cloud Computing,Southeast Asia,2025-2026,"Microsoft Azure, Google Cloud, Oracle, IBM",internal review,deep dive,completed
+req-0058,Analyze consumer goods competitive landscape and supply chain in Global,Consumer Goods,Global,2025-2026,"Unilever, Coca-Cola",internal review,standard,completed
+req-0059,"Monitor banking trends, risks and strategic implications for Europe",Banking,Europe,2023-2026,"HDFC Bank, ICICI Bank, JPMorgan Chase, HSBC",workshop,deep dive,completed
+req-0060,Assess banking risk & exposure in United Kingdom from 2023 to 2026,Banking,United Kingdom,2023-2026,"ICICI Bank, DBS",proposal,standard,completed
+req-0061,Evaluate electric vehicles market entry and growth opportunities in Middle East,Electric Vehicles,Middle East,2025-2026,"Mahindra, MG Motor India, BYD, Tata Motors, Hyundai",strategy brief,detailed,pending
+req-0062,Analyze healthcare technology competitive landscape and customer behavior in India,Healthcare Technology,India,2025-2026,"Philips, Medtronic, GE HealthCare, Abbott, Siemens Healthineers",strategy brief,standard,running
+req-0063,"Monitor consumer goods trends, risks and strategic implications for India",Consumer Goods,India,2023-2026,"Nestle, P&G, PepsiCo, Coca-Cola, Unilever",proposal,standard,pending
+req-0064,Assess semiconductors market growth in Canada from 2025 to 2026,Semiconductors,Canada,2025-2026,"Intel, NVIDIA, TSMC, AMD",workshop,standard,completed
+req-0065,Assess automotive pricing & demand in Global from 2025 to 2026,Automotive,Global,2025-2026,"Toyota, BMW, Volkswagen",proposal,deep dive,completed
+req-0066,Evaluate consumer goods market entry and growth opportunities in United States,Consumer Goods,United States,2022-2026,"PepsiCo, Nestle, P&G, Coca-Cola",strategy brief,deep dive,completed
+req-0067,Evaluate semiconductors market entry and growth opportunities in Southeast Asia,Semiconductors,Southeast Asia,2022-2026,"Samsung, NVIDIA, AMD, TSMC",strategy brief,standard,completed
+req-0068,Evaluate cloud computing market entry and growth opportunities in Global,Cloud Computing,Global,2023-2026,"Microsoft Azure, IBM, AWS, Google Cloud",proposal,standard,completed
+req-0069,Assess cybersecurity working capital in Japan from 2024 to 2026,Cybersecurity,Japan,2024-2026,"CrowdStrike, Microsoft",internal review,detailed,completed
+req-0070,"Monitor semiconductors trends, risks and strategic implications for Canada",Semiconductors,Canada,2025-2026,"NVIDIA, TSMC, Intel, AMD, Samsung",workshop,detailed,pending
+req-0071,Analyze cloud computing competitive landscape and product launches in India,Cloud Computing,India,2023-2026,"Microsoft Azure, Oracle, AWS, Google Cloud",workshop,detailed,running
+req-0072,"Monitor renewable energy trends, risks and strategic implications for Japan",Renewable Energy,Japan,2022-2026,"Adani Green, Siemens Gamesa",proposal,detailed,completed
+req-0073,Evaluate logistics market entry and growth opportunities in Middle East,Logistics,Middle East,2025-2026,"UPS, Maersk, FedEx, DP World",proposal,detailed,running
+req-0074,Analyze e-commerce competitive landscape and customer behavior in Global,E-commerce,Global,2022-2026,"Shopify, Walmart, Amazon",strategy brief,detailed,completed
+req-0075,"Monitor semiconductors trends, risks and strategic implications for India",Semiconductors,India,2023-2026,"AMD, Intel",proposal,standard,completed
+req-0076,Analyze cloud computing competitive landscape and operational efficiency in Japan,Cloud Computing,Japan,2025-2026,"Microsoft Azure, AWS, Google Cloud, Oracle",strategy brief,deep dive,completed
+req-0077,"Monitor automotive trends, risks and strategic implications for Southeast Asia",Automotive,Southeast Asia,2023-2026,"Tesla, Toyota, Hyundai",workshop,standard,completed
+req-0078,"Monitor automotive trends, risks and strategic implications for United States",Automotive,United States,2025-2026,"Volkswagen, BMW, Hyundai, Toyota",strategy brief,deep dive,completed
+req-0079,Assess cloud computing regulation in United States from 2024 to 2026,Cloud Computing,United States,2024-2026,"Google Cloud, AWS, Oracle",strategy brief,deep dive,completed
+req-0080,"Monitor logistics trends, risks and strategic implications for Europe",Logistics,Europe,2022-2026,"Maersk, DHL, FedEx",workshop,deep dive,completed
+req-0081,Evaluate generative ai market entry and growth opportunities in Global,Generative AI,Global,2022-2026,"Google, Meta, Anthropic, OpenAI, Microsoft",proposal,detailed,pending
+req-0082,"Monitor industrial automation trends, risks and strategic implications for Canada",Industrial Automation,Canada,2023-2026,"Siemens, Rockwell Automation",workshop,standard,completed
+req-0083,Assess consumer goods operational efficiency in Canada from 2024 to 2026,Consumer Goods,Canada,2024-2026,"P&G, Unilever, PepsiCo",proposal,detailed,pending
+req-0084,Analyze automotive competitive landscape and operational efficiency in United Kingdom,Automotive,United Kingdom,2022-2026,"BMW, Toyota, Hyundai, Tesla, Volkswagen",proposal,standard,completed
+req-0085,"Monitor industrial automation trends, risks and strategic implications for India",Industrial Automation,India,2023-2026,"Rockwell Automation, ABB",workshop,detailed,running
+req-0086,Assess healthcare technology market size in United Kingdom from 2024 to 2026,Healthcare Technology,United Kingdom,2024-2026,"GE HealthCare, Abbott, Medtronic, Siemens Healthineers, Philips",internal review,standard,completed
+req-0087,Analyze e-commerce competitive landscape and technology adoption in Europe,E-commerce,Europe,2023-2026,"Amazon, Walmart, Shopify, Flipkart, Alibaba",workshop,deep dive,completed
+req-0088,Evaluate cloud computing market entry and growth opportunities in Canada,Cloud Computing,Canada,2022-2026,"Oracle, IBM, Microsoft Azure",internal review,deep dive,completed
+req-0089,"Monitor healthcare technology trends, risks and strategic implications for Global",Healthcare Technology,Global,2025-2026,"GE HealthCare, Philips, Medtronic",proposal,standard,pending
+req-0090,Analyze renewable energy competitive landscape and working capital in United States,Renewable Energy,United States,2022-2026,"Siemens Gamesa, Vestas",strategy brief,detailed,running
+req-0091,Evaluate generative ai market entry and growth opportunities in Japan,Generative AI,Japan,2022-2026,"Microsoft, Google, OpenAI, Meta, Anthropic",proposal,detailed,pending
+req-0092,Evaluate automotive market entry and growth opportunities in India,Automotive,India,2025-2026,"Hyundai, Volkswagen",strategy brief,deep dive,completed
+req-0093,Analyze renewable energy competitive landscape and supply chain in Australia,Renewable Energy,Australia,2023-2026,"ReNew, Adani Green",strategy brief,detailed,completed
+req-0094,Analyze e-commerce competitive landscape and working capital in United Kingdom,E-commerce,United Kingdom,2022-2026,"Shopify, Amazon, Alibaba, Walmart, Flipkart",strategy brief,standard,pending
+req-0095,Evaluate fintech market entry and growth opportunities in India,FinTech,India,2023-2026,"Razorpay, Adyen, Stripe, PayPal",workshop,deep dive,running
+req-0096,Evaluate cybersecurity market entry and growth opportunities in Middle East,Cybersecurity,Middle East,2022-2026,"Fortinet, Microsoft",strategy brief,standard,completed
+req-0097,"Monitor banking trends, risks and strategic implications for Australia",Banking,Australia,2024-2026,"JPMorgan Chase, DBS, ICICI Bank, HSBC, HDFC Bank",strategy brief,detailed,completed
+req-0098,Evaluate semiconductors market entry and growth opportunities in United Kingdom,Semiconductors,United Kingdom,2025-2026,"NVIDIA, TSMC",workshop,standard,running
+req-0099,Analyze e-commerce competitive landscape and investment trends in Japan,E-commerce,Japan,2022-2026,"Walmart, Alibaba, Shopify, Amazon",strategy brief,deep dive,completed
+req-0100,Assess renewable energy competitor movement in Canada from 2023 to 2026,Renewable Energy,Canada,2023-2026,"Vestas, ReNew",proposal,detailed,completed
+req-0101,Analyze cloud computing competitive landscape and risk & exposure in India,Cloud Computing,India,2024-2026,"Microsoft Azure, AWS",internal review,standard,completed
+req-0102,Evaluate logistics market entry and growth opportunities in Europe,Logistics,Europe,2023-2026,"DP World, Maersk",proposal,deep dive,running
+req-0103,Assess healthcare technology competitor movement in United States from 2025 to 2026,Healthcare Technology,United States,2025-2026,"Medtronic, Philips",proposal,detailed,completed
+req-0104,Analyze e-commerce competitive landscape and partnerships in United States,E-commerce,United States,2023-2026,"Amazon, Flipkart",workshop,standard,completed
+req-0105,Assess renewable energy pricing & demand in Japan from 2023 to 2026,Renewable Energy,Japan,2023-2026,"NTPC, Vestas",internal review,deep dive,completed
+req-0106,"Monitor renewable energy trends, risks and strategic implications for United Kingdom",Renewable Energy,United Kingdom,2025-2026,"Siemens Gamesa, Adani Green",internal review,standard,running
+req-0107,"Monitor cloud computing trends, risks and strategic implications for Japan",Cloud Computing,Japan,2025-2026,"Google Cloud, Oracle, AWS, Microsoft Azure",strategy brief,standard,pending
+req-0108,"Monitor banking trends, risks and strategic implications for Japan",Banking,Japan,2022-2026,"DBS, JPMorgan Chase, ICICI Bank, HSBC",proposal,standard,completed
+req-0109,"Monitor healthcare technology trends, risks and strategic implications for India",Healthcare Technology,India,2022-2026,"Medtronic, Abbott, Siemens Healthineers, GE HealthCare",strategy brief,deep dive,completed
+req-0110,Assess e-commerce market size in Middle East from 2023 to 2026,E-commerce,Middle East,2023-2026,"Shopify, Walmart, Alibaba",internal review,detailed,completed
+req-0111,"Monitor generative ai trends, risks and strategic implications for Japan",Generative AI,Japan,2023-2026,"Microsoft, Google, Meta",strategy brief,deep dive,completed
+req-0112,Analyze electric vehicles competitive landscape and market size in Australia,Electric Vehicles,Australia,2025-2026,"MG Motor India, BYD, Hyundai, Tata Motors, Mahindra",workshop,deep dive,completed
+req-0113,Evaluate industrial automation market entry and growth opportunities in India,Industrial Automation,India,2023-2026,"ABB, Siemens",proposal,deep dive,completed
+req-0114,Assess automotive market growth in India from 2025 to 2026,Automotive,India,2025-2026,"Hyundai, Volkswagen, Toyota, BMW",workshop,deep dive,completed
+req-0115,"Monitor generative ai trends, risks and strategic implications for United States",Generative AI,United States,2022-2026,"Anthropic, Google, Microsoft",workshop,deep dive,running
+req-0116,"Monitor healthcare technology trends, risks and strategic implications for Europe",Healthcare Technology,Europe,2023-2026,"Philips, Abbott",strategy brief,standard,completed
+req-0117,"Monitor automotive trends, risks and strategic implications for Southeast Asia",Automotive,Southeast Asia,2022-2026,"Toyota, BMW, Volkswagen, Tesla",strategy brief,deep dive,completed
+req-0118,"Monitor e-commerce trends, risks and strategic implications for Australia",E-commerce,Australia,2025-2026,"Shopify, Alibaba, Walmart, Amazon, Flipkart",workshop,detailed,completed
+req-0119,"Monitor automotive trends, risks and strategic implications for Southeast Asia",Automotive,Southeast Asia,2025-2026,"Volkswagen, Toyota",strategy brief,detailed,completed
+req-0120,"Monitor e-commerce trends, risks and strategic implications for Japan",E-commerce,Japan,2022-2026,"Shopify, Amazon, Walmart, Flipkart",internal review,detailed,running
+req-0121,Assess semiconductors risk & exposure in Canada from 2024 to 2026,Semiconductors,Canada,2024-2026,"AMD, NVIDIA",internal review,standard,pending
+req-0122,Assess fintech regulation in Global from 2023 to 2026,FinTech,Global,2023-2026,"PayPal, PhonePe, Adyen, Stripe, Razorpay",workshop,detailed,completed
+req-0123,Analyze generative ai competitive landscape and market size in Japan,Generative AI,Japan,2024-2026,"OpenAI, Meta, Google",workshop,deep dive,running
+req-0124,"Monitor cloud computing trends, risks and strategic implications for Canada",Cloud Computing,Canada,2024-2026,"Oracle, Google Cloud, Microsoft Azure, AWS, IBM",internal review,detailed,running
+req-0125,Assess banking market growth in Japan from 2023 to 2026,Banking,Japan,2023-2026,"HSBC, HDFC Bank, DBS, JPMorgan Chase",internal review,deep dive,pending
+req-0126,Assess e-commerce market growth in Australia from 2022 to 2026,E-commerce,Australia,2022-2026,"Walmart, Alibaba, Amazon",strategy brief,deep dive,completed
+req-0127,Assess generative ai regulation in India from 2023 to 2026,Generative AI,India,2023-2026,"Microsoft, Meta",internal review,standard,completed
+req-0128,Analyze semiconductors competitive landscape and operational efficiency in United States,Semiconductors,United States,2025-2026,"AMD, NVIDIA",workshop,detailed,running
+req-0129,"Monitor banking trends, risks and strategic implications for Southeast Asia",Banking,Southeast Asia,2022-2026,"DBS, HSBC, HDFC Bank, JPMorgan Chase, ICICI Bank",internal review,standard,completed
+req-0130,Evaluate renewable energy market entry and growth opportunities in Middle East,Renewable Energy,Middle East,2023-2026,"Siemens Gamesa, Adani Green, ReNew, NTPC, Vestas",workshop,deep dive,completed
+req-0131,"Monitor banking trends, risks and strategic implications for Global",Banking,Global,2025-2026,"HSBC, HDFC Bank, JPMorgan Chase, DBS, ICICI Bank",internal review,detailed,pending
+req-0132,Analyze automotive competitive landscape and pricing & demand in Europe,Automotive,Europe,2025-2026,"Hyundai, Volkswagen, Toyota, Tesla, BMW",strategy brief,deep dive,pending
+req-0133,Evaluate fintech market entry and growth opportunities in Australia,FinTech,Australia,2022-2026,"Adyen, Razorpay, PayPal, Stripe, PhonePe",workshop,standard,completed
+req-0134,Analyze cloud computing competitive landscape and customer behavior in Europe,Cloud Computing,Europe,2023-2026,"AWS, IBM",workshop,detailed,running
+req-0135,Analyze fintech competitive landscape and regulation in United States,FinTech,United States,2022-2026,"Stripe, PhonePe",proposal,standard,completed
+req-0136,"Monitor automotive trends, risks and strategic implications for Japan",Automotive,Japan,2022-2026,"Toyota, Hyundai, BMW, Volkswagen, Tesla",workshop,deep dive,pending
+req-0137,"Monitor healthcare technology trends, risks and strategic implications for Canada",Healthcare Technology,Canada,2024-2026,"Abbott, Medtronic, Siemens Healthineers, Philips",internal review,standard,running
+req-0138,"Monitor generative ai trends, risks and strategic implications for Europe",Generative AI,Europe,2024-2026,"Microsoft, OpenAI, Anthropic",internal review,detailed,pending
+req-0139,Assess electric vehicles market size in Global from 2025 to 2026,Electric Vehicles,Global,2025-2026,"Mahindra, MG Motor India, BYD, Tata Motors, Hyundai",internal review,standard,completed
+req-0140,Evaluate renewable energy market entry and growth opportunities in Australia,Renewable Energy,Australia,2025-2026,"Siemens Gamesa, Vestas, NTPC, Adani Green",workshop,detailed,completed
+req-0141,Analyze consumer goods competitive landscape and investment trends in Southeast Asia,Consumer Goods,Southeast Asia,2024-2026,"Nestle, PepsiCo, P&G, Coca-Cola",proposal,detailed,completed
+req-0142,"Monitor healthcare technology trends, risks and strategic implications for United States",Healthcare Technology,United States,2025-2026,"Medtronic, GE HealthCare",strategy brief,detailed,completed
+req-0143,Assess banking market size in Global from 2024 to 2026,Banking,Global,2024-2026,"HSBC, ICICI Bank, DBS, HDFC Bank",workshop,deep dive,pending
+req-0144,Analyze industrial automation competitive landscape and investment trends in India,Industrial Automation,India,2023-2026,"Honeywell, Schneider Electric, ABB, Rockwell Automation, Siemens",strategy brief,standard,completed
+req-0145,Evaluate telecom market entry and growth opportunities in Australia,Telecom,Australia,2022-2026,"Reliance Jio, Verizon, AT&T, Vodafone Idea",strategy brief,detailed,running
+req-0146,"Monitor telecom trends, risks and strategic implications for United States",Telecom,United States,2025-2026,"Reliance Jio, Vodafone Idea, Bharti Airtel",strategy brief,standard,completed
+req-0147,Evaluate cloud computing market entry and growth opportunities in India,Cloud Computing,India,2024-2026,"Google Cloud, IBM, Oracle",internal review,standard,pending
+req-0148,Evaluate healthcare technology market entry and growth opportunities in Canada,Healthcare Technology,Canada,2024-2026,"Abbott, Medtronic, GE HealthCare, Siemens Healthineers, Philips",workshop,detailed,pending
+req-0149,Assess renewable energy competitor movement in United Kingdom from 2025 to 2026,Renewable Energy,United Kingdom,2025-2026,"NTPC, Vestas, ReNew, Adani Green, Siemens Gamesa",strategy brief,deep dive,completed
+req-0150,"Monitor logistics trends, risks and strategic implications for Global",Logistics,Global,2024-2026,"FedEx, DHL, UPS, Maersk",workshop,standard,pending
+req-0151,Evaluate industrial automation market entry and growth opportunities in Canada,Industrial Automation,Canada,2025-2026,"ABB, Schneider Electric, Honeywell, Rockwell Automation",strategy brief,deep dive,pending
+req-0152,Analyze consumer goods competitive landscape and market size in India,Consumer Goods,India,2024-2026,"P&G, Coca-Cola, Unilever, PepsiCo",workshop,deep dive,pending
+req-0153,"Monitor e-commerce trends, risks and strategic implications for Southeast Asia",E-commerce,Southeast Asia,2024-2026,"Alibaba, Amazon, Walmart, Flipkart, Shopify",proposal,deep dive,completed
+req-0154,Analyze e-commerce competitive landscape and value leakage in United States,E-commerce,United States,2024-2026,"Shopify, Amazon, Flipkart, Walmart, Alibaba",proposal,standard,completed
+req-0155,"Monitor electric vehicles trends, risks and strategic implications for United States",Electric Vehicles,United States,2023-2026,"Tata Motors, Hyundai, BYD, Mahindra, MG Motor India",internal review,deep dive,completed
+req-0156,Assess banking operational efficiency in United States from 2023 to 2026,Banking,United States,2023-2026,"JPMorgan Chase, HSBC, DBS, ICICI Bank",workshop,deep dive,completed
+req-0157,Analyze e-commerce competitive landscape and partnerships in Canada,E-commerce,Canada,2023-2026,"Walmart, Shopify, Amazon, Alibaba",strategy brief,deep dive,completed
+req-0158,Assess industrial automation value leakage in Southeast Asia from 2024 to 2026,Industrial Automation,Southeast Asia,2024-2026,"Siemens, Honeywell, Rockwell Automation, Schneider Electric, ABB",workshop,deep dive,pending
+req-0159,Analyze electric vehicles competitive landscape and supply chain in Australia,Electric Vehicles,Australia,2025-2026,"Hyundai, Tata Motors, BYD, MG Motor India, Mahindra",workshop,standard,completed
+req-0160,Evaluate electric vehicles market entry and growth opportunities in United States,Electric Vehicles,United States,2024-2026,"Tata Motors, BYD, Hyundai",strategy brief,deep dive,completed
+req-0161,Assess cloud computing technology adoption in United States from 2025 to 2026,Cloud Computing,United States,2025-2026,"AWS, Google Cloud, IBM, Microsoft Azure, Oracle",internal review,detailed,completed
+req-0162,"Monitor automotive trends, risks and strategic implications for Middle East",Automotive,Middle East,2025-2026,"Toyota, Hyundai, BMW, Tesla, Volkswagen",proposal,deep dive,running
+req-0163,Evaluate cloud computing market entry and growth opportunities in Middle East,Cloud Computing,Middle East,2022-2026,"Google Cloud, Oracle, IBM, AWS, Microsoft Azure",strategy brief,deep dive,completed
+req-0164,Analyze renewable energy competitive landscape and regulation in United Kingdom,Renewable Energy,United Kingdom,2023-2026,"Adani Green, NTPC",strategy brief,detailed,completed
+req-0165,"Monitor semiconductors trends, risks and strategic implications for Australia",Semiconductors,Australia,2025-2026,"AMD, TSMC, Samsung",strategy brief,detailed,pending
+req-0166,Evaluate e-commerce market entry and growth opportunities in India,E-commerce,India,2023-2026,"Alibaba, Walmart, Amazon, Flipkart",strategy brief,detailed,completed
+req-0167,Evaluate e-commerce market entry and growth opportunities in India,E-commerce,India,2023-2026,"Walmart, Shopify",workshop,standard,completed
+req-0168,"Monitor e-commerce trends, risks and strategic implications for United Kingdom",E-commerce,United Kingdom,2023-2026,"Walmart, Alibaba, Amazon",internal review,deep dive,pending
+req-0169,Evaluate healthcare technology market entry and growth opportunities in Middle East,Healthcare Technology,Middle East,2024-2026,"Abbott, Medtronic, Siemens Healthineers, GE HealthCare, Philips",strategy brief,standard,completed
+req-0170,"Monitor semiconductors trends, risks and strategic implications for United Kingdom",Semiconductors,United Kingdom,2024-2026,"NVIDIA, Samsung, Intel, TSMC",proposal,detailed,completed
+req-0171,Evaluate consumer goods market entry and growth opportunities in Southeast Asia,Consumer Goods,Southeast Asia,2022-2026,"Coca-Cola, Unilever",proposal,detailed,pending
+req-0172,Assess electric vehicles competitor movement in United States from 2024 to 2026,Electric Vehicles,United States,2024-2026,"Hyundai, Tata Motors",internal review,standard,completed
+req-0173,Evaluate consumer goods market entry and growth opportunities in United Kingdom,Consumer Goods,United Kingdom,2023-2026,"Nestle, Unilever, P&G, PepsiCo, Coca-Cola",proposal,deep dive,pending
+req-0174,Evaluate healthcare technology market entry and growth opportunities in India,Healthcare Technology,India,2024-2026,"Medtronic, Abbott",proposal,standard,completed
+req-0175,"Monitor generative ai trends, risks and strategic implications for United Kingdom",Generative AI,United Kingdom,2024-2026,"Microsoft, OpenAI, Meta, Anthropic",internal review,detailed,completed
+req-0176,Analyze generative ai competitive landscape and operational efficiency in Southeast Asia,Generative AI,Southeast Asia,2022-2026,"Anthropic, Google",internal review,standard,running
+req-0177,Evaluate e-commerce market entry and growth opportunities in Global,E-commerce,Global,2022-2026,"Shopify, Walmart, Alibaba",strategy brief,detailed,completed
+req-0178,Assess cloud computing risk & exposure in United Kingdom from 2024 to 2026,Cloud Computing,United Kingdom,2024-2026,"Microsoft Azure, Google Cloud",internal review,standard,completed
+req-0179,Assess cybersecurity market growth in Global from 2024 to 2026,Cybersecurity,Global,2024-2026,"CrowdStrike, Palo Alto Networks, Microsoft, Cisco, Fortinet",internal review,detailed,completed
+req-0180,Evaluate fintech market entry and growth opportunities in Canada,FinTech,Canada,2025-2026,"Razorpay, PayPal",proposal,standard,pending
+req-0181,"Monitor generative ai trends, risks and strategic implications for Europe",Generative AI,Europe,2022-2026,"Anthropic, OpenAI",workshop,standard,completed
+req-0182,Analyze healthcare technology competitive landscape and risk & exposure in India,Healthcare Technology,India,2023-2026,"GE HealthCare, Siemens Healthineers, Medtronic, Abbott, Philips",strategy brief,standard,completed
+req-0183,Assess fintech product launches in Southeast Asia from 2024 to 2026,FinTech,Southeast Asia,2024-2026,"PayPal, PhonePe",workshop,deep dive,completed
+req-0184,"Monitor industrial automation trends, risks and strategic implications for Canada",Industrial Automation,Canada,2022-2026,"Siemens, Rockwell Automation",internal review,standard,completed
+req-0185,Assess renewable energy market growth in Australia from 2024 to 2026,Renewable Energy,Australia,2024-2026,"Vestas, Adani Green",strategy brief,deep dive,completed
+req-0186,Assess automotive value leakage in India from 2024 to 2026,Automotive,India,2024-2026,"Volkswagen, BMW, Toyota, Hyundai",internal review,deep dive,running
+req-0187,Assess fintech operational efficiency in Australia from 2023 to 2026,FinTech,Australia,2023-2026,"PhonePe, PayPal, Stripe, Razorpay",internal review,detailed,completed
+req-0188,Evaluate consumer goods market entry and growth opportunities in United Kingdom,Consumer Goods,United Kingdom,2025-2026,"Unilever, Nestle",strategy brief,standard,completed
+req-0189,Assess generative ai competitor movement in Australia from 2025 to 2026,Generative AI,Australia,2025-2026,"Meta, Microsoft, Anthropic",internal review,deep dive,completed
+req-0190,Assess automotive market size in Southeast Asia from 2023 to 2026,Automotive,Southeast Asia,2023-2026,"Toyota, Volkswagen, BMW",proposal,deep dive,completed
+req-0191,Analyze banking competitive landscape and value leakage in Japan,Banking,Japan,2022-2026,"JPMorgan Chase, ICICI Bank, HDFC Bank, HSBC, DBS",internal review,detailed,completed
+req-0192,Assess automotive technology adoption in Global from 2024 to 2026,Automotive,Global,2024-2026,"Hyundai, Toyota, Volkswagen",strategy brief,deep dive,running
+req-0193,Analyze generative ai competitive landscape and market growth in Australia,Generative AI,Australia,2025-2026,"Microsoft, Anthropic, Meta, OpenAI, Google",internal review,standard,completed
+req-0194,"Monitor cloud computing trends, risks and strategic implications for India",Cloud Computing,India,2023-2026,"Microsoft Azure, AWS",internal review,deep dive,pending
+req-0195,Assess cloud computing risk & exposure in Global from 2024 to 2026,Cloud Computing,Global,2024-2026,"IBM, Google Cloud, Microsoft Azure, AWS",strategy brief,detailed,pending
+req-0196,Analyze healthcare technology competitive landscape and product launches in Southeast Asia,Healthcare Technology,Southeast Asia,2022-2026,"GE HealthCare, Medtronic, Philips",strategy brief,deep dive,completed
+req-0197,"Monitor healthcare technology trends, risks and strategic implications for Europe",Healthcare Technology,Europe,2025-2026,"GE HealthCare, Medtronic, Philips, Siemens Healthineers",workshop,detailed,pending
+req-0198,Assess consumer goods market growth in Japan from 2022 to 2026,Consumer Goods,Japan,2022-2026,"Nestle, P&G, Unilever, Coca-Cola, PepsiCo",workshop,detailed,running
+req-0199,Analyze electric vehicles competitive landscape and competitor movement in Southeast Asia,Electric Vehicles,Southeast Asia,2024-2026,"Mahindra, Tata Motors, Hyundai",internal review,detailed,running
+req-0200,Evaluate industrial automation market entry and growth opportunities in Australia,Industrial Automation,Australia,2024-2026,"Honeywell, ABB, Schneider Electric, Rockwell Automation, Siemens",proposal,detailed,completed
+req-0201,Analyze generative ai competitive landscape and supply chain in Australia,Generative AI,Australia,2023-2026,"Google, OpenAI, Meta",proposal,detailed,pending
+req-0202,"Monitor fintech trends, risks and strategic implications for Global",FinTech,Global,2025-2026,"PhonePe, PayPal, Adyen",strategy brief,standard,completed
+req-0203,Analyze e-commerce competitive landscape and technology adoption in Middle East,E-commerce,Middle East,2025-2026,"Flipkart, Walmart, Alibaba, Amazon, Shopify",internal review,deep dive,pending
+req-0204,Analyze renewable energy competitive landscape and technology adoption in Global,Renewable Energy,Global,2022-2026,"Vestas, Siemens Gamesa, Adani Green, ReNew",internal review,standard,completed
+req-0205,Analyze consumer goods competitive landscape and regulation in Global,Consumer Goods,Global,2023-2026,"Nestle, P&G, Coca-Cola, PepsiCo, Unilever",internal review,deep dive,pending
+req-0206,Assess cybersecurity competitor movement in Japan from 2025 to 2026,Cybersecurity,Japan,2025-2026,"Cisco, Palo Alto Networks",internal review,deep dive,pending
+req-0207,Assess semiconductors value leakage in Europe from 2022 to 2026,Semiconductors,Europe,2022-2026,"TSMC, Intel, NVIDIA",proposal,detailed,running
+req-0208,Assess semiconductors market growth in Japan from 2023 to 2026,Semiconductors,Japan,2023-2026,"NVIDIA, TSMC",internal review,detailed,pending
+req-0209,Analyze consumer goods competitive landscape and partnerships in Australia,Consumer Goods,Australia,2023-2026,"Unilever, Nestle",workshop,deep dive,pending
+req-0210,"Monitor banking trends, risks and strategic implications for Middle East",Banking,Middle East,2022-2026,"ICICI Bank, JPMorgan Chase, HSBC, HDFC Bank, DBS",strategy brief,deep dive,pending
+req-0211,"Monitor renewable energy trends, risks and strategic implications for Europe",Renewable Energy,Europe,2023-2026,"Vestas, Siemens Gamesa, NTPC",internal review,deep dive,running
+req-0212,Assess banking working capital in Japan from 2022 to 2026,Banking,Japan,2022-2026,"ICICI Bank, DBS, HSBC, JPMorgan Chase",strategy brief,standard,pending
+req-0213,Assess logistics partnerships in Global from 2022 to 2026,Logistics,Global,2022-2026,"DHL, DP World, FedEx",strategy brief,standard,completed
+req-0214,"Monitor logistics trends, risks and strategic implications for Middle East",Logistics,Middle East,2024-2026,"DP World, FedEx, UPS, DHL",strategy brief,standard,completed
+req-0215,"Monitor industrial automation trends, risks and strategic implications for Middle East",Industrial Automation,Middle East,2024-2026,"Schneider Electric, Siemens, ABB, Honeywell",proposal,detailed,pending
+req-0216,Evaluate telecom market entry and growth opportunities in Global,Telecom,Global,2025-2026,"Vodafone Idea, Bharti Airtel, AT&T, Verizon, Reliance Jio",proposal,detailed,running
+req-0217,Evaluate banking market entry and growth opportunities in Australia,Banking,Australia,2023-2026,"HDFC Bank, ICICI Bank, HSBC",workshop,deep dive,completed
+req-0218,"Monitor healthcare technology trends, risks and strategic implications for Global",Healthcare Technology,Global,2023-2026,"Philips, Medtronic, GE HealthCare, Siemens Healthineers, Abbott",strategy brief,standard,completed
+req-0219,Evaluate telecom market entry and growth opportunities in United States,Telecom,United States,2024-2026,"AT&T, Bharti Airtel, Verizon, Vodafone Idea, Reliance Jio",strategy brief,detailed,running
+req-0220,Evaluate electric vehicles market entry and growth opportunities in Canada,Electric Vehicles,Canada,2024-2026,"Mahindra, Hyundai, BYD",proposal,deep dive,running
+req-0221,Analyze telecom competitive landscape and working capital in United Kingdom,Telecom,United Kingdom,2025-2026,"AT&T, Vodafone Idea, Bharti Airtel",internal review,deep dive,completed
+req-0222,Evaluate generative ai market entry and growth opportunities in Europe,Generative AI,Europe,2025-2026,"OpenAI, Google, Anthropic, Meta, Microsoft",proposal,detailed,pending
+req-0223,"Monitor cybersecurity trends, risks and strategic implications for United Kingdom",Cybersecurity,United Kingdom,2024-2026,"Fortinet, Microsoft",proposal,detailed,running
+req-0224,Evaluate e-commerce market entry and growth opportunities in Canada,E-commerce,Canada,2024-2026,"Alibaba, Amazon, Walmart",strategy brief,detailed,running
+req-0225,Analyze cybersecurity competitive landscape and working capital in India,Cybersecurity,India,2022-2026,"Palo Alto Networks, Cisco, Fortinet, Microsoft",proposal,standard,pending
+req-0226,Evaluate cloud computing market entry and growth opportunities in Middle East,Cloud Computing,Middle East,2025-2026,"Google Cloud, Microsoft Azure, AWS, IBM, Oracle",proposal,detailed,completed
+req-0227,Analyze renewable energy competitive landscape and market growth in United States,Renewable Energy,United States,2025-2026,"Siemens Gamesa, ReNew, Adani Green",workshop,standard,completed
+req-0228,Assess semiconductors risk & exposure in India from 2024 to 2026,Semiconductors,India,2024-2026,"Intel, AMD, Samsung, NVIDIA, TSMC",internal review,standard,completed
+req-0229,Assess banking customer behavior in Japan from 2023 to 2026,Banking,Japan,2023-2026,"DBS, HDFC Bank",proposal,standard,pending
+req-0230,"Monitor electric vehicles trends, risks and strategic implications for United States",Electric Vehicles,United States,2023-2026,"MG Motor India, Tata Motors, Mahindra",internal review,detailed,completed
+req-0231,Assess consumer goods value leakage in Global from 2023 to 2026,Consumer Goods,Global,2023-2026,"Coca-Cola, Unilever",proposal,standard,completed
+req-0232,"Monitor fintech trends, risks and strategic implications for India",FinTech,India,2025-2026,"Adyen, PhonePe",internal review,deep dive,running
+req-0233,"Monitor cloud computing trends, risks and strategic implications for Europe",Cloud Computing,Europe,2022-2026,"Google Cloud, Microsoft Azure",internal review,deep dive,running
+req-0234,Analyze semiconductors competitive landscape and competitor movement in Canada,Semiconductors,Canada,2023-2026,"Samsung, Intel, TSMC",strategy brief,deep dive,pending
+req-0235,Assess healthcare technology partnerships in Middle East from 2023 to 2026,Healthcare Technology,Middle East,2023-2026,"GE HealthCare, Siemens Healthineers, Medtronic, Philips, Abbott",strategy brief,detailed,pending
+req-0236,"Monitor cloud computing trends, risks and strategic implications for Japan",Cloud Computing,Japan,2025-2026,"Microsoft Azure, IBM, AWS",workshop,detailed,completed
+req-0237,Evaluate automotive market entry and growth opportunities in United Kingdom,Automotive,United Kingdom,2025-2026,"BMW, Volkswagen",workshop,deep dive,running
+req-0238,Evaluate electric vehicles market entry and growth opportunities in Middle East,Electric Vehicles,Middle East,2022-2026,"Tata Motors, MG Motor India, Mahindra, BYD, Hyundai",proposal,standard,completed
+req-0239,Assess e-commerce market size in Global from 2024 to 2026,E-commerce,Global,2024-2026,"Flipkart, Shopify, Walmart, Amazon",proposal,detailed,pending
+req-0240,"Monitor e-commerce trends, risks and strategic implications for Global",E-commerce,Global,2023-2026,"Walmart, Amazon, Alibaba",workshop,detailed,running
+req-0241,Analyze electric vehicles competitive landscape and partnerships in Europe,Electric Vehicles,Europe,2025-2026,"Mahindra, Hyundai, MG Motor India, BYD",workshop,standard,completed
+req-0242,"Monitor industrial automation trends, risks and strategic implications for Canada",Industrial Automation,Canada,2024-2026,"Schneider Electric, Siemens, ABB, Rockwell Automation",internal review,standard,completed
+req-0243,Evaluate healthcare technology market entry and growth opportunities in United States,Healthcare Technology,United States,2025-2026,"Philips, GE HealthCare, Siemens Healthineers, Abbott",proposal,deep dive,completed
+req-0244,"Monitor cloud computing trends, risks and strategic implications for Southeast Asia",Cloud Computing,Southeast Asia,2024-2026,"AWS, Microsoft Azure, IBM, Google Cloud, Oracle",strategy brief,detailed,completed
+req-0245,"Monitor automotive trends, risks and strategic implications for Australia",Automotive,Australia,2024-2026,"Hyundai, Volkswagen, BMW",proposal,deep dive,completed
+req-0246,Assess automotive risk & exposure in Europe from 2022 to 2026,Automotive,Europe,2022-2026,"Toyota, Tesla, BMW",workshop,detailed,completed
+req-0247,Analyze cloud computing competitive landscape and competitor movement in Australia,Cloud Computing,Australia,2025-2026,"Google Cloud, AWS, Oracle, IBM, Microsoft Azure",strategy brief,standard,running
+req-0248,"Monitor logistics trends, risks and strategic implications for Global",Logistics,Global,2023-2026,"DHL, FedEx",strategy brief,deep dive,completed
+req-0249,Assess generative ai competitor movement in India from 2025 to 2026,Generative AI,India,2025-2026,"OpenAI, Google, Meta, Anthropic",workshop,standard,completed
+req-0250,Analyze semiconductors competitive landscape and supply chain in Japan,Semiconductors,Japan,2024-2026,"Intel, AMD, NVIDIA, TSMC",strategy brief,deep dive,completed
+req-0251,Evaluate banking market entry and growth opportunities in Australia,Banking,Australia,2022-2026,"HDFC Bank, HSBC, ICICI Bank, DBS, JPMorgan Chase",workshop,standard,completed
+req-0252,Assess healthcare technology operational efficiency in Europe from 2024 to 2026,Healthcare Technology,Europe,2024-2026,"GE HealthCare, Philips",strategy brief,deep dive,completed
+req-0253,Evaluate fintech market entry and growth opportunities in Southeast Asia,FinTech,Southeast Asia,2022-2026,"Stripe, PayPal",internal review,deep dive,completed
+req-0254,Evaluate telecom market entry and growth opportunities in Canada,Telecom,Canada,2023-2026,"Bharti Airtel, Reliance Jio, Verizon, AT&T, Vodafone Idea",proposal,deep dive,completed
+req-0255,"Monitor healthcare technology trends, risks and strategic implications for Middle East",Healthcare Technology,Middle East,2023-2026,"Siemens Healthineers, Philips",proposal,deep dive,pending
+req-0256,Analyze automotive competitive landscape and risk & exposure in Southeast Asia,Automotive,Southeast Asia,2024-2026,"Hyundai, Volkswagen, BMW, Toyota",strategy brief,detailed,pending
+req-0257,Assess industrial automation working capital in Canada from 2023 to 2026,Industrial Automation,Canada,2023-2026,"Schneider Electric, Rockwell Automation, Honeywell",workshop,standard,pending
+req-0258,Evaluate electric vehicles market entry and growth opportunities in Europe,Electric Vehicles,Europe,2022-2026,"BYD, MG Motor India, Hyundai",workshop,deep dive,running
+req-0259,Evaluate automotive market entry and growth opportunities in United Kingdom,Automotive,United Kingdom,2025-2026,"Hyundai, Toyota, Volkswagen, BMW",workshop,standard,completed
+req-0260,Analyze cloud computing competitive landscape and competitor movement in United States,Cloud Computing,United States,2023-2026,"Oracle, Google Cloud, IBM, AWS",strategy brief,deep dive,pending
+req-0261,Assess healthcare technology regulation in United States from 2024 to 2026,Healthcare Technology,United States,2024-2026,"Abbott, Medtronic, Siemens Healthineers, Philips, GE HealthCare",workshop,detailed,completed
+req-0262,"Monitor fintech trends, risks and strategic implications for United Kingdom",FinTech,United Kingdom,2022-2026,"PhonePe, Razorpay, Adyen",proposal,detailed,pending
+req-0263,"Monitor logistics trends, risks and strategic implications for Europe",Logistics,Europe,2025-2026,"DHL, FedEx",workshop,detailed,running
+req-0264,Assess cloud computing risk & exposure in United Kingdom from 2023 to 2026,Cloud Computing,United Kingdom,2023-2026,"IBM, Microsoft Azure, AWS, Google Cloud, Oracle",strategy brief,standard,completed
+req-0265,Assess semiconductors investment trends in Global from 2023 to 2026,Semiconductors,Global,2023-2026,"Samsung, AMD, TSMC",internal review,standard,pending
+req-0266,Evaluate logistics market entry and growth opportunities in Europe,Logistics,Europe,2024-2026,"DHL, Maersk, UPS",internal review,deep dive,completed
+req-0267,Analyze fintech competitive landscape and competitor movement in Japan,FinTech,Japan,2023-2026,"Adyen, Stripe, PayPal",internal review,detailed,running
+req-0268,"Monitor electric vehicles trends, risks and strategic implications for India",Electric Vehicles,India,2024-2026,"MG Motor India, BYD, Mahindra, Tata Motors, Hyundai",internal review,standard,completed
+req-0269,Analyze automotive competitive landscape and investment trends in Southeast Asia,Automotive,Southeast Asia,2024-2026,"Toyota, Hyundai, Volkswagen, Tesla",strategy brief,deep dive,completed
+req-0270,Assess banking operational efficiency in Southeast Asia from 2023 to 2026,Banking,Southeast Asia,2023-2026,"JPMorgan Chase, DBS, HDFC Bank",proposal,deep dive,running
+req-0271,Evaluate electric vehicles market entry and growth opportunities in Global,Electric Vehicles,Global,2024-2026,"BYD, Tata Motors, MG Motor India, Mahindra",internal review,detailed,pending
+req-0272,Analyze fintech competitive landscape and regulation in Japan,FinTech,Japan,2025-2026,"Stripe, PhonePe",internal review,standard,pending
+req-0273,"Monitor logistics trends, risks and strategic implications for Middle East",Logistics,Middle East,2024-2026,"DHL, DP World, UPS, FedEx, Maersk",internal review,detailed,running
+req-0274,"Monitor consumer goods trends, risks and strategic implications for Japan",Consumer Goods,Japan,2022-2026,"Nestle, P&G",strategy brief,standard,running
+req-0275,Assess semiconductors supply chain in Middle East from 2023 to 2026,Semiconductors,Middle East,2023-2026,"Intel, NVIDIA, TSMC, AMD",strategy brief,detailed,completed
+req-0276,Evaluate e-commerce market entry and growth opportunities in Southeast Asia,E-commerce,Southeast Asia,2025-2026,"Alibaba, Shopify",internal review,standard,running
+req-0277,Assess fintech supply chain in Japan from 2024 to 2026,FinTech,Japan,2024-2026,"PayPal, PhonePe, Adyen, Razorpay, Stripe",workshop,standard,running
+req-0278,Evaluate automotive market entry and growth opportunities in Canada,Automotive,Canada,2022-2026,"Tesla, Toyota, BMW",strategy brief,deep dive,pending
+req-0279,"Monitor fintech trends, risks and strategic implications for United States",FinTech,United States,2022-2026,"PhonePe, PayPal, Stripe",internal review,standard,completed
+req-0280,Assess fintech regulation in Middle East from 2022 to 2026,FinTech,Middle East,2022-2026,"PhonePe, Razorpay, PayPal, Adyen, Stripe",strategy brief,deep dive,completed
+req-0281,"Monitor cybersecurity trends, risks and strategic implications for Middle East",Cybersecurity,Middle East,2025-2026,"Fortinet, Cisco, Palo Alto Networks, CrowdStrike, Microsoft",internal review,detailed,completed
+req-0282,"Monitor cloud computing trends, risks and strategic implications for India",Cloud Computing,India,2022-2026,"Microsoft Azure, Google Cloud, AWS, IBM",workshop,standard,completed
+req-0283,Evaluate electric vehicles market entry and growth opportunities in Australia,Electric Vehicles,Australia,2022-2026,"Mahindra, BYD, MG Motor India, Tata Motors",proposal,standard,completed
+req-0284,"Monitor telecom trends, risks and strategic implications for United Kingdom",Telecom,United Kingdom,2024-2026,"AT&T, Reliance Jio, Verizon, Vodafone Idea",internal review,detailed,completed
+req-0285,Analyze logistics competitive landscape and market size in Global,Logistics,Global,2022-2026,"UPS, Maersk, DP World",workshop,detailed,completed
+req-0286,Analyze e-commerce competitive landscape and customer behavior in Europe,E-commerce,Europe,2023-2026,"Walmart, Flipkart, Amazon, Alibaba",internal review,detailed,running
+req-0287,Assess renewable energy operational efficiency in Japan from 2024 to 2026,Renewable Energy,Japan,2024-2026,"Adani Green, NTPC, Vestas, Siemens Gamesa, ReNew",proposal,detailed,completed
+req-0288,Assess generative ai pricing & demand in India from 2025 to 2026,Generative AI,India,2025-2026,"Meta, Anthropic",strategy brief,standard,completed
+req-0289,"Monitor e-commerce trends, risks and strategic implications for Japan",E-commerce,Japan,2025-2026,"Alibaba, Walmart, Flipkart, Shopify, Amazon",strategy brief,deep dive,completed
+req-0290,Analyze banking competitive landscape and value leakage in Middle East,Banking,Middle East,2025-2026,"JPMorgan Chase, DBS",proposal,standard,completed
+req-0291,Analyze telecom competitive landscape and supply chain in Japan,Telecom,Japan,2024-2026,"AT&T, Verizon, Reliance Jio, Bharti Airtel, Vodafone Idea",workshop,detailed,completed
+req-0292,"Monitor consumer goods trends, risks and strategic implications for United States",Consumer Goods,United States,2024-2026,"Nestle, Coca-Cola, PepsiCo, P&G, Unilever",workshop,standard,completed
+req-0293,Assess e-commerce competitor movement in Southeast Asia from 2024 to 2026,E-commerce,Southeast Asia,2024-2026,"Alibaba, Shopify, Flipkart, Walmart",workshop,deep dive,running
+req-0294,Assess electric vehicles partnerships in Global from 2024 to 2026,Electric Vehicles,Global,2024-2026,"Mahindra, Tata Motors, Hyundai",strategy brief,standard,completed
+req-0295,Evaluate logistics market entry and growth opportunities in Europe,Logistics,Europe,2022-2026,"FedEx, Maersk, UPS",workshop,detailed,completed
+req-0296,"Monitor banking trends, risks and strategic implications for India",Banking,India,2025-2026,"ICICI Bank, HSBC",workshop,detailed,running
+req-0297,Analyze banking competitive landscape and operational efficiency in Australia,Banking,Australia,2025-2026,"DBS, ICICI Bank, HDFC Bank, HSBC, JPMorgan Chase",workshop,detailed,completed
+req-0298,Assess automotive customer behavior in United Kingdom from 2024 to 2026,Automotive,United Kingdom,2024-2026,"Hyundai, BMW, Toyota, Tesla",strategy brief,deep dive,completed
+req-0299,Evaluate consumer goods market entry and growth opportunities in Middle East,Consumer Goods,Middle East,2023-2026,"Nestle, Coca-Cola, PepsiCo",workshop,detailed,running
+req-0300,Analyze fintech competitive landscape and product launches in Global,FinTech,Global,2024-2026,"Stripe, PhonePe, PayPal",strategy brief,standard,running
+req-0301,Analyze cloud computing competitive landscape and product launches in Japan,Cloud Computing,Japan,2022-2026,"IBM, Google Cloud",workshop,detailed,completed
+req-0302,Assess semiconductors technology adoption in United Kingdom from 2025 to 2026,Semiconductors,United Kingdom,2025-2026,"Intel, TSMC, NVIDIA, AMD",internal review,deep dive,running
+req-0303,Assess banking regulation in Europe from 2022 to 2026,Banking,Europe,2022-2026,"ICICI Bank, JPMorgan Chase, DBS",strategy brief,detailed,completed
+req-0304,"Monitor fintech trends, risks and strategic implications for Middle East",FinTech,Middle East,2024-2026,"PayPal, Razorpay, Stripe, Adyen",proposal,deep dive,pending
+req-0305,Analyze industrial automation competitive landscape and customer behavior in Canada,Industrial Automation,Canada,2024-2026,"ABB, Honeywell",strategy brief,deep dive,completed
+req-0306,Assess consumer goods technology adoption in Southeast Asia from 2023 to 2026,Consumer Goods,Southeast Asia,2023-2026,"Coca-Cola, Nestle",strategy brief,detailed,running
+req-0307,Assess healthcare technology regulation in Global from 2023 to 2026,Healthcare Technology,Global,2023-2026,"Abbott, Siemens Healthineers, GE HealthCare, Philips",strategy brief,deep dive,completed
+req-0308,Analyze generative ai competitive landscape and regulation in India,Generative AI,India,2024-2026,"OpenAI, Meta, Anthropic",proposal,deep dive,pending
+req-0309,"Monitor logistics trends, risks and strategic implications for Southeast Asia",Logistics,Southeast Asia,2022-2026,"DP World, UPS",workshop,deep dive,completed
+req-0310,Evaluate industrial automation market entry and growth opportunities in Europe,Industrial Automation,Europe,2024-2026,"Honeywell, Schneider Electric, Siemens, Rockwell Automation",strategy brief,deep dive,running
+req-0311,Assess telecom product launches in Middle East from 2024 to 2026,Telecom,Middle East,2024-2026,"Vodafone Idea, Bharti Airtel, AT&T, Reliance Jio, Verizon",proposal,deep dive,pending
+req-0312,Assess electric vehicles technology adoption in Australia from 2023 to 2026,Electric Vehicles,Australia,2023-2026,"BYD, Mahindra, Hyundai",strategy brief,deep dive,completed
+req-0313,Analyze consumer goods competitive landscape and pricing & demand in United Kingdom,Consumer Goods,United Kingdom,2022-2026,"Nestle, Coca-Cola, PepsiCo, Unilever, P&G",internal review,deep dive,running
+req-0314,Assess e-commerce partnerships in Global from 2022 to 2026,E-commerce,Global,2022-2026,"Amazon, Alibaba",proposal,deep dive,pending
+req-0315,"Monitor consumer goods trends, risks and strategic implications for Middle East",Consumer Goods,Middle East,2025-2026,"P&G, Unilever, PepsiCo",proposal,deep dive,completed
+req-0316,Analyze consumer goods competitive landscape and product launches in Middle East,Consumer Goods,Middle East,2024-2026,"Unilever, P&G",proposal,standard,pending
+req-0317,Analyze generative ai competitive landscape and operational efficiency in Japan,Generative AI,Japan,2024-2026,"Anthropic, Google, OpenAI, Meta",workshop,detailed,pending
+req-0318,Evaluate consumer goods market entry and growth opportunities in United Kingdom,Consumer Goods,United Kingdom,2024-2026,"Nestle, PepsiCo",internal review,deep dive,completed
+req-0319,Evaluate cloud computing market entry and growth opportunities in Japan,Cloud Computing,Japan,2025-2026,"Oracle, Microsoft Azure, AWS, IBM",internal review,standard,completed
+req-0320,Analyze telecom competitive landscape and risk & exposure in United Kingdom,Telecom,United Kingdom,2024-2026,"Reliance Jio, Verizon, Vodafone Idea, AT&T, Bharti Airtel",proposal,standard,pending
+req-0321,"Monitor generative ai trends, risks and strategic implications for Canada",Generative AI,Canada,2022-2026,"OpenAI, Microsoft, Anthropic",internal review,detailed,pending
+req-0322,Assess banking supply chain in Global from 2022 to 2026,Banking,Global,2022-2026,"DBS, ICICI Bank, HDFC Bank, HSBC, JPMorgan Chase",internal review,deep dive,running
+req-0323,Analyze automotive competitive landscape and risk & exposure in United Kingdom,Automotive,United Kingdom,2022-2026,"Toyota, BMW",internal review,standard,completed
+req-0324,Assess renewable energy market size in United Kingdom from 2023 to 2026,Renewable Energy,United Kingdom,2023-2026,"Siemens Gamesa, Vestas",strategy brief,detailed,completed
+req-0325,Assess cybersecurity technology adoption in India from 2023 to 2026,Cybersecurity,India,2023-2026,"Microsoft, CrowdStrike, Cisco",proposal,standard,completed
+req-0326,Assess cybersecurity operational efficiency in Australia from 2025 to 2026,Cybersecurity,Australia,2025-2026,"Palo Alto Networks, CrowdStrike, Fortinet",strategy brief,standard,completed
+req-0327,"Monitor cybersecurity trends, risks and strategic implications for India",Cybersecurity,India,2022-2026,"Palo Alto Networks, Fortinet, Cisco, CrowdStrike, Microsoft",internal review,standard,running
+req-0328,"Monitor logistics trends, risks and strategic implications for India",Logistics,India,2023-2026,"Maersk, FedEx, DHL, UPS, DP World",proposal,deep dive,running
+req-0329,Evaluate healthcare technology market entry and growth opportunities in Europe,Healthcare Technology,Europe,2024-2026,"Siemens Healthineers, GE HealthCare, Philips, Abbott",proposal,deep dive,completed
+req-0330,Evaluate electric vehicles market entry and growth opportunities in Middle East,Electric Vehicles,Middle East,2025-2026,"MG Motor India, Tata Motors, Mahindra",proposal,deep dive,completed
+req-0331,Analyze industrial automation competitive landscape and value leakage in United Kingdom,Industrial Automation,United Kingdom,2024-2026,"Rockwell Automation, Schneider Electric, Honeywell, Siemens, ABB",internal review,detailed,pending
+req-0332,"Monitor banking trends, risks and strategic implications for India",Banking,India,2023-2026,"HSBC, DBS",workshop,deep dive,running
+req-0333,Evaluate semiconductors market entry and growth opportunities in Global,Semiconductors,Global,2023-2026,"TSMC, Samsung, NVIDIA",workshop,detailed,completed
+req-0334,"Monitor renewable energy trends, risks and strategic implications for Middle East",Renewable Energy,Middle East,2023-2026,"ReNew, Vestas, NTPC",internal review,detailed,running
+req-0335,"Monitor cybersecurity trends, risks and strategic implications for India",Cybersecurity,India,2024-2026,"Microsoft, Cisco, Palo Alto Networks, CrowdStrike",workshop,deep dive,completed
+req-0336,"Monitor generative ai trends, risks and strategic implications for Global",Generative AI,Global,2023-2026,"Anthropic, OpenAI",proposal,deep dive,completed
+req-0337,Evaluate generative ai market entry and growth opportunities in Canada,Generative AI,Canada,2022-2026,"Microsoft, OpenAI, Google",internal review,deep dive,pending
+req-0338,"Monitor e-commerce trends, risks and strategic implications for Canada",E-commerce,Canada,2022-2026,"Shopify, Amazon, Flipkart",proposal,detailed,completed
+req-0339,Evaluate automotive market entry and growth opportunities in Southeast Asia,Automotive,Southeast Asia,2023-2026,"Hyundai, BMW, Toyota, Tesla",strategy brief,deep dive,running
+req-0340,Evaluate consumer goods market entry and growth opportunities in Southeast Asia,Consumer Goods,Southeast Asia,2025-2026,"PepsiCo, P&G",workshop,standard,running
+req-0341,Evaluate telecom market entry and growth opportunities in Japan,Telecom,Japan,2022-2026,"Verizon, Bharti Airtel, Vodafone Idea",proposal,standard,completed
+req-0342,"Monitor fintech trends, risks and strategic implications for Japan",FinTech,Japan,2022-2026,"Stripe, PayPal, PhonePe, Razorpay, Adyen",workshop,detailed,completed
+req-0343,"Monitor cloud computing trends, risks and strategic implications for Middle East",Cloud Computing,Middle East,2025-2026,"Microsoft Azure, AWS",proposal,deep dive,completed
+req-0344,Assess industrial automation regulation in Southeast Asia from 2023 to 2026,Industrial Automation,Southeast Asia,2023-2026,"Rockwell Automation, Honeywell",strategy brief,deep dive,running
+req-0345,Analyze semiconductors competitive landscape and market growth in United States,Semiconductors,United States,2022-2026,"Samsung, AMD",strategy brief,standard,running
+req-0346,Evaluate semiconductors market entry and growth opportunities in Australia,Semiconductors,Australia,2024-2026,"AMD, TSMC, Samsung",strategy brief,standard,completed
+req-0347,"Monitor e-commerce trends, risks and strategic implications for United States",E-commerce,United States,2025-2026,"Flipkart, Walmart, Shopify, Alibaba, Amazon",workshop,detailed,pending
+req-0348,Analyze telecom competitive landscape and supply chain in Europe,Telecom,Europe,2024-2026,"AT&T, Reliance Jio",internal review,deep dive,completed
+req-0349,Assess electric vehicles technology adoption in Global from 2024 to 2026,Electric Vehicles,Global,2024-2026,"Hyundai, BYD, Mahindra",proposal,standard,running
+req-0350,"Monitor banking trends, risks and strategic implications for Canada",Banking,Canada,2022-2026,"JPMorgan Chase, HSBC",strategy brief,standard,running
+req-0351,Analyze industrial automation competitive landscape and market size in United States,Industrial Automation,United States,2025-2026,"Honeywell, Rockwell Automation, Siemens, Schneider Electric",internal review,deep dive,completed
+req-0352,Analyze logistics competitive landscape and investment trends in Japan,Logistics,Japan,2024-2026,"DP World, FedEx, DHL, Maersk, UPS",internal review,standard,pending
+req-0353,Evaluate healthcare technology market entry and growth opportunities in Southeast Asia,Healthcare Technology,Southeast Asia,2022-2026,"Siemens Healthineers, Abbott, Philips, GE HealthCare, Medtronic",strategy brief,deep dive,pending
+req-0354,Assess healthcare technology regulation in Europe from 2023 to 2026,Healthcare Technology,Europe,2023-2026,"Siemens Healthineers, Medtronic",workshop,standard,running
+req-0355,Analyze logistics competitive landscape and customer behavior in Middle East,Logistics,Middle East,2024-2026,"DHL, FedEx, DP World, Maersk",workshop,standard,completed
+req-0356,Assess cybersecurity market growth in Canada from 2023 to 2026,Cybersecurity,Canada,2023-2026,"Palo Alto Networks, CrowdStrike, Microsoft, Cisco, Fortinet",workshop,standard,completed
+req-0357,Evaluate consumer goods market entry and growth opportunities in Canada,Consumer Goods,Canada,2022-2026,"Unilever, Coca-Cola",proposal,standard,pending
+req-0358,Evaluate automotive market entry and growth opportunities in United States,Automotive,United States,2024-2026,"Volkswagen, Tesla, BMW",strategy brief,detailed,completed
+req-0359,"Monitor telecom trends, risks and strategic implications for United Kingdom",Telecom,United Kingdom,2025-2026,"Verizon, Vodafone Idea, Reliance Jio, Bharti Airtel, AT&T",proposal,detailed,completed
+req-0360,Assess cybersecurity working capital in Global from 2024 to 2026,Cybersecurity,Global,2024-2026,"Palo Alto Networks, Cisco, Fortinet",strategy brief,deep dive,completed
+req-0361,"Monitor consumer goods trends, risks and strategic implications for United States",Consumer Goods,United States,2022-2026,"PepsiCo, Nestle, P&G, Coca-Cola",strategy brief,deep dive,running
+req-0362,"Monitor e-commerce trends, risks and strategic implications for Global",E-commerce,Global,2022-2026,"Walmart, Amazon, Flipkart",internal review,deep dive,running
+req-0363,"Monitor automotive trends, risks and strategic implications for India",Automotive,India,2025-2026,"Tesla, Toyota",internal review,deep dive,completed
+req-0364,"Monitor cybersecurity trends, risks and strategic implications for Japan",Cybersecurity,Japan,2022-2026,"Palo Alto Networks, Cisco, Fortinet, Microsoft, CrowdStrike",strategy brief,deep dive,running
+req-0365,"Monitor cybersecurity trends, risks and strategic implications for Australia",Cybersecurity,Australia,2024-2026,"Cisco, Microsoft, CrowdStrike, Fortinet",workshop,detailed,completed
+req-0366,Evaluate banking market entry and growth opportunities in Japan,Banking,Japan,2022-2026,"DBS, HDFC Bank, JPMorgan Chase, HSBC, ICICI Bank",proposal,deep dive,running
+req-0367,Evaluate banking market entry and growth opportunities in United States,Banking,United States,2024-2026,"ICICI Bank, HDFC Bank, HSBC, DBS, JPMorgan Chase",workshop,detailed,completed
+req-0368,Evaluate renewable energy market entry and growth opportunities in Europe,Renewable Energy,Europe,2023-2026,"Vestas, ReNew, Siemens Gamesa, Adani Green, NTPC",proposal,standard,pending
+req-0369,Assess semiconductors technology adoption in Southeast Asia from 2024 to 2026,Semiconductors,Southeast Asia,2024-2026,"TSMC, NVIDIA, Intel, Samsung, AMD",workshop,detailed,completed
+req-0370,Analyze telecom competitive landscape and market size in India,Telecom,India,2023-2026,"Vodafone Idea, Bharti Airtel, AT&T, Verizon",workshop,standard,completed
+req-0371,Evaluate healthcare technology market entry and growth opportunities in United Kingdom,Healthcare Technology,United Kingdom,2022-2026,"Siemens Healthineers, Abbott, Medtronic",strategy brief,detailed,completed
+req-0372,Analyze semiconductors competitive landscape and working capital in Australia,Semiconductors,Australia,2022-2026,"Samsung, TSMC, Intel",workshop,detailed,completed
+req-0373,Assess renewable energy investment trends in Australia from 2024 to 2026,Renewable Energy,Australia,2024-2026,"Adani Green, Vestas",workshop,detailed,completed
+req-0374,Analyze logistics competitive landscape and product launches in Middle East,Logistics,Middle East,2024-2026,"DP World, FedEx, DHL, UPS, Maersk",strategy brief,standard,pending
+req-0375,Analyze semiconductors competitive landscape and working capital in Global,Semiconductors,Global,2022-2026,"TSMC, Intel",internal review,standard,pending
+req-0376,"Monitor fintech trends, risks and strategic implications for Australia",FinTech,Australia,2024-2026,"Razorpay, Stripe, PhonePe",strategy brief,detailed,running
+req-0377,Analyze e-commerce competitive landscape and regulation in Canada,E-commerce,Canada,2022-2026,"Walmart, Flipkart, Alibaba, Shopify",strategy brief,deep dive,completed
+req-0378,Analyze healthcare technology competitive landscape and regulation in Japan,Healthcare Technology,Japan,2022-2026,"GE HealthCare, Siemens Healthineers, Philips",proposal,detailed,completed
+req-0379,Analyze telecom competitive landscape and investment trends in Southeast Asia,Telecom,Southeast Asia,2025-2026,"AT&T, Verizon, Reliance Jio, Vodafone Idea, Bharti Airtel",internal review,deep dive,pending
+req-0380,Analyze cloud computing competitive landscape and operational efficiency in India,Cloud Computing,India,2022-2026,"Oracle, IBM, Microsoft Azure, AWS",strategy brief,standard,pending
+req-0381,Analyze e-commerce competitive landscape and market growth in United States,E-commerce,United States,2023-2026,"Shopify, Amazon, Walmart",strategy brief,detailed,pending
+req-0382,"Monitor renewable energy trends, risks and strategic implications for Middle East",Renewable Energy,Middle East,2024-2026,"Vestas, Siemens Gamesa, NTPC, Adani Green, ReNew",workshop,standard,running
+req-0383,Analyze consumer goods competitive landscape and technology adoption in United Kingdom,Consumer Goods,United Kingdom,2024-2026,"Nestle, P&G, PepsiCo",proposal,deep dive,completed
+req-0384,Assess cybersecurity competitor movement in Canada from 2023 to 2026,Cybersecurity,Canada,2023-2026,"Cisco, Fortinet, Palo Alto Networks, CrowdStrike, Microsoft",workshop,deep dive,pending
+req-0385,Evaluate automotive market entry and growth opportunities in Middle East,Automotive,Middle East,2024-2026,"Tesla, Volkswagen, Toyota",workshop,standard,running
+req-0386,Assess generative ai risk & exposure in Global from 2024 to 2026,Generative AI,Global,2024-2026,"OpenAI, Microsoft, Anthropic",internal review,detailed,completed
+req-0387,Analyze telecom competitive landscape and investment trends in Japan,Telecom,Japan,2023-2026,"AT&T, Vodafone Idea, Reliance Jio, Bharti Airtel, Verizon",workshop,standard,completed
+req-0388,Analyze e-commerce competitive landscape and investment trends in India,E-commerce,India,2023-2026,"Alibaba, Amazon, Flipkart, Walmart, Shopify",strategy brief,deep dive,running
+req-0389,"Monitor semiconductors trends, risks and strategic implications for Southeast Asia",Semiconductors,Southeast Asia,2024-2026,"AMD, NVIDIA",strategy brief,standard,running
+req-0390,Evaluate semiconductors market entry and growth opportunities in Middle East,Semiconductors,Middle East,2023-2026,"NVIDIA, AMD, Intel, TSMC",proposal,deep dive,completed
+req-0391,"Monitor cybersecurity trends, risks and strategic implications for Japan",Cybersecurity,Japan,2024-2026,"CrowdStrike, Palo Alto Networks, Microsoft, Cisco, Fortinet",strategy brief,deep dive,running
+req-0392,Analyze healthcare technology competitive landscape and supply chain in United Kingdom,Healthcare Technology,United Kingdom,2023-2026,"Philips, Medtronic, Siemens Healthineers",workshop,deep dive,pending
+req-0393,Evaluate generative ai market entry and growth opportunities in Europe,Generative AI,Europe,2024-2026,"OpenAI, Anthropic, Microsoft, Meta",internal review,detailed,completed
+req-0394,Assess industrial automation customer behavior in Japan from 2024 to 2026,Industrial Automation,Japan,2024-2026,"Honeywell, ABB, Schneider Electric",internal review,standard,completed
+req-0395,Evaluate semiconductors market entry and growth opportunities in Canada,Semiconductors,Canada,2024-2026,"Samsung, NVIDIA, TSMC, Intel, AMD",internal review,standard,completed
+req-0396,Analyze e-commerce competitive landscape and value leakage in Global,E-commerce,Global,2023-2026,"Walmart, Amazon, Flipkart, Alibaba, Shopify",proposal,detailed,pending
+req-0397,Evaluate semiconductors market entry and growth opportunities in United States,Semiconductors,United States,2023-2026,"Samsung, Intel",proposal,standard,pending
+req-0398,"Monitor industrial automation trends, risks and strategic implications for Global",Industrial Automation,Global,2022-2026,"Rockwell Automation, ABB, Schneider Electric",internal review,deep dive,completed
+req-0399,Analyze industrial automation competitive landscape and investment trends in Middle East,Industrial Automation,Middle East,2023-2026,"ABB, Siemens, Rockwell Automation, Schneider Electric, Honeywell",proposal,deep dive,completed
+req-0400,Evaluate industrial automation market entry and growth opportunities in Australia,Industrial Automation,Australia,2023-2026,"Siemens, Honeywell, Rockwell Automation, Schneider Electric, ABB",proposal,deep dive,pending
+req-0401,Assess cloud computing value leakage in Australia from 2023 to 2026,Cloud Computing,Australia,2023-2026,"Google Cloud, AWS, Oracle, IBM",workshop,standard,completed
+req-0402,Analyze cloud computing competitive landscape and market size in Middle East,Cloud Computing,Middle East,2022-2026,"Microsoft Azure, Google Cloud, Oracle",workshop,deep dive,completed
+req-0403,Evaluate cybersecurity market entry and growth opportunities in Japan,Cybersecurity,Japan,2025-2026,"Cisco, CrowdStrike, Fortinet",workshop,detailed,completed
+req-0404,Assess fintech technology adoption in Canada from 2023 to 2026,FinTech,Canada,2023-2026,"Razorpay, PhonePe",proposal,detailed,completed
+req-0405,"Monitor automotive trends, risks and strategic implications for United States",Automotive,United States,2025-2026,"Hyundai, Volkswagen, Toyota, Tesla",proposal,deep dive,completed
+req-0406,Evaluate logistics market entry and growth opportunities in India,Logistics,India,2022-2026,"UPS, Maersk, DHL, DP World",strategy brief,standard,completed
+req-0407,Assess renewable energy risk & exposure in United States from 2024 to 2026,Renewable Energy,United States,2024-2026,"Adani Green, NTPC",proposal,deep dive,completed
+req-0408,Evaluate consumer goods market entry and growth opportunities in Europe,Consumer Goods,Europe,2025-2026,"P&G, Coca-Cola",internal review,detailed,completed
+req-0409,Analyze automotive competitive landscape and partnerships in Canada,Automotive,Canada,2023-2026,"Hyundai, Tesla, Toyota",proposal,deep dive,completed
+req-0410,Assess telecom partnerships in India from 2023 to 2026,Telecom,India,2023-2026,"Bharti Airtel, Vodafone Idea, Reliance Jio, AT&T",strategy brief,standard,completed
+req-0411,Analyze generative ai competitive landscape and value leakage in Japan,Generative AI,Japan,2022-2026,"Meta, Google",proposal,deep dive,completed
+req-0412,"Monitor healthcare technology trends, risks and strategic implications for Southeast Asia",Healthcare Technology,Southeast Asia,2023-2026,"Abbott, Medtronic",internal review,detailed,completed
+req-0413,Analyze automotive competitive landscape and value leakage in Australia,Automotive,Australia,2025-2026,"Volkswagen, BMW",proposal,deep dive,pending
+req-0414,"Monitor automotive trends, risks and strategic implications for Middle East",Automotive,Middle East,2023-2026,"Toyota, BMW, Tesla",proposal,standard,completed
+req-0415,Analyze automotive competitive landscape and pricing & demand in Middle East,Automotive,Middle East,2023-2026,"Volkswagen, Hyundai",proposal,standard,pending
+req-0416,Analyze fintech competitive landscape and product launches in Europe,FinTech,Europe,2024-2026,"Stripe, PayPal",internal review,deep dive,completed
+req-0417,Analyze generative ai competitive landscape and investment trends in United States,Generative AI,United States,2025-2026,"Meta, Anthropic, OpenAI",internal review,deep dive,completed
+req-0418,Evaluate automotive market entry and growth opportunities in Australia,Automotive,Australia,2023-2026,"Tesla, Toyota, BMW, Volkswagen, Hyundai",workshop,standard,completed
+req-0419,"Monitor cybersecurity trends, risks and strategic implications for Europe",Cybersecurity,Europe,2023-2026,"Palo Alto Networks, Fortinet, CrowdStrike, Microsoft",proposal,standard,completed
+req-0420,"Monitor fintech trends, risks and strategic implications for Global",FinTech,Global,2022-2026,"PayPal, Adyen, Stripe",workshop,standard,completed
+req-0421,Evaluate consumer goods market entry and growth opportunities in Japan,Consumer Goods,Japan,2023-2026,"P&G, Unilever, Nestle, PepsiCo, Coca-Cola",strategy brief,deep dive,running
+req-0422,Evaluate banking market entry and growth opportunities in Japan,Banking,Japan,2022-2026,"ICICI Bank, HDFC Bank, JPMorgan Chase",internal review,detailed,completed
+req-0423,Analyze electric vehicles competitive landscape and operational efficiency in Southeast Asia,Electric Vehicles,Southeast Asia,2024-2026,"MG Motor India, Tata Motors, Hyundai",proposal,detailed,pending
+req-0424,Evaluate renewable energy market entry and growth opportunities in United States,Renewable Energy,United States,2025-2026,"ReNew, Siemens Gamesa, NTPC",workshop,standard,pending
+req-0425,Evaluate renewable energy market entry and growth opportunities in United Kingdom,Renewable Energy,United Kingdom,2024-2026,"ReNew, Adani Green, Vestas, NTPC",proposal,standard,completed
+req-0426,Analyze fintech competitive landscape and competitor movement in India,FinTech,India,2022-2026,"Razorpay, PhonePe",internal review,deep dive,completed
+req-0427,"Monitor cloud computing trends, risks and strategic implications for Southeast Asia",Cloud Computing,Southeast Asia,2024-2026,"Microsoft Azure, IBM, AWS, Oracle, Google Cloud",proposal,standard,completed
+req-0428,"Monitor automotive trends, risks and strategic implications for Japan",Automotive,Japan,2023-2026,"Hyundai, BMW, Toyota",internal review,deep dive,completed
+req-0429,Assess banking operational efficiency in Japan from 2024 to 2026,Banking,Japan,2024-2026,"ICICI Bank, DBS, JPMorgan Chase, HSBC",internal review,standard,completed
+req-0430,Evaluate fintech market entry and growth opportunities in Japan,FinTech,Japan,2023-2026,"PayPal, Adyen, Razorpay, PhonePe",proposal,standard,completed
+req-0431,Evaluate cloud computing market entry and growth opportunities in Australia,Cloud Computing,Australia,2024-2026,"Google Cloud, Oracle, AWS",workshop,deep dive,completed
+req-0432,"Monitor fintech trends, risks and strategic implications for Europe",FinTech,Europe,2025-2026,"PhonePe, PayPal, Stripe, Razorpay, Adyen",internal review,detailed,completed
+req-0433,Analyze generative ai competitive landscape and supply chain in Southeast Asia,Generative AI,Southeast Asia,2025-2026,"Meta, Google",workshop,detailed,completed
+req-0434,Assess automotive operational efficiency in Canada from 2024 to 2026,Automotive,Canada,2024-2026,"Toyota, Hyundai, Tesla, BMW",strategy brief,deep dive,running
+req-0435,"Monitor semiconductors trends, risks and strategic implications for India",Semiconductors,India,2023-2026,"NVIDIA, Intel",internal review,detailed,completed
+req-0436,Analyze electric vehicles competitive landscape and competitor movement in Middle East,Electric Vehicles,Middle East,2024-2026,"Tata Motors, Mahindra, Hyundai, MG Motor India, BYD",proposal,deep dive,completed
+req-0437,Assess automotive value leakage in Europe from 2023 to 2026,Automotive,Europe,2023-2026,"Tesla, Toyota, BMW, Hyundai, Volkswagen",workshop,standard,completed
+req-0438,"Monitor automotive trends, risks and strategic implications for India",Automotive,India,2023-2026,"BMW, Tesla, Volkswagen",workshop,detailed,completed
+req-0439,Analyze e-commerce competitive landscape and investment trends in United States,E-commerce,United States,2025-2026,"Shopify, Amazon",strategy brief,standard,completed
+req-0440,Assess generative ai market size in Global from 2024 to 2026,Generative AI,Global,2024-2026,"OpenAI, Meta, Anthropic, Google, Microsoft",internal review,standard,completed
+req-0441,Evaluate semiconductors market entry and growth opportunities in India,Semiconductors,India,2023-2026,"Samsung, Intel, AMD, TSMC, NVIDIA",internal review,deep dive,running
+req-0442,Evaluate healthcare technology market entry and growth opportunities in India,Healthcare Technology,India,2025-2026,"Abbott, Siemens Healthineers",strategy brief,detailed,completed
+req-0443,"Monitor semiconductors trends, risks and strategic implications for Canada",Semiconductors,Canada,2024-2026,"Samsung, Intel",strategy brief,deep dive,pending
+req-0444,Assess fintech regulation in Canada from 2025 to 2026,FinTech,Canada,2025-2026,"Adyen, Razorpay, PhonePe",internal review,standard,running
+req-0445,Analyze e-commerce competitive landscape and product launches in Southeast Asia,E-commerce,Southeast Asia,2022-2026,"Amazon, Flipkart, Walmart, Alibaba",workshop,deep dive,running
+req-0446,Evaluate electric vehicles market entry and growth opportunities in Global,Electric Vehicles,Global,2025-2026,"Tata Motors, Hyundai, BYD, MG Motor India, Mahindra",internal review,deep dive,completed
+req-0447,Evaluate cybersecurity market entry and growth opportunities in Australia,Cybersecurity,Australia,2022-2026,"Fortinet, CrowdStrike, Microsoft",strategy brief,deep dive,running
+req-0448,Assess fintech product launches in Global from 2023 to 2026,FinTech,Global,2023-2026,"PayPal, Adyen",strategy brief,detailed,running
+req-0449,"Monitor electric vehicles trends, risks and strategic implications for Middle East",Electric Vehicles,Middle East,2022-2026,"Tata Motors, Mahindra, Hyundai",strategy brief,deep dive,running
+req-0450,Analyze industrial automation competitive landscape and market growth in India,Industrial Automation,India,2025-2026,"Schneider Electric, Siemens, Honeywell, Rockwell Automation, ABB",workshop,deep dive,completed
+req-0451,Evaluate cybersecurity market entry and growth opportunities in Europe,Cybersecurity,Europe,2025-2026,"Fortinet, CrowdStrike",workshop,standard,completed
+req-0452,Evaluate electric vehicles market entry and growth opportunities in India,Electric Vehicles,India,2023-2026,"BYD, Hyundai, Mahindra",workshop,deep dive,completed
+req-0453,Evaluate renewable energy market entry and growth opportunities in Southeast Asia,Renewable Energy,Southeast Asia,2025-2026,"Adani Green, NTPC, ReNew, Vestas",internal review,standard,completed
+req-0454,Evaluate cloud computing market entry and growth opportunities in India,Cloud Computing,India,2022-2026,"Oracle, IBM, Google Cloud, AWS, Microsoft Azure",internal review,deep dive,completed
+req-0455,Assess telecom partnerships in Global from 2024 to 2026,Telecom,Global,2024-2026,"Verizon, AT&T, Vodafone Idea, Reliance Jio, Bharti Airtel",internal review,standard,completed
+req-0456,Assess cloud computing supply chain in India from 2024 to 2026,Cloud Computing,India,2024-2026,"AWS, IBM, Google Cloud, Microsoft Azure",workshop,standard,pending
+req-0457,Assess consumer goods investment trends in Southeast Asia from 2025 to 2026,Consumer Goods,Southeast Asia,2025-2026,"Nestle, PepsiCo, Coca-Cola, Unilever, P&G",internal review,standard,running
+req-0458,Assess generative ai investment trends in Middle East from 2023 to 2026,Generative AI,Middle East,2023-2026,"Google, OpenAI, Meta",proposal,standard,running
+req-0459,Evaluate industrial automation market entry and growth opportunities in United States,Industrial Automation,United States,2023-2026,"Honeywell, Siemens, ABB, Rockwell Automation, Schneider Electric",strategy brief,deep dive,completed
+req-0460,"Monitor e-commerce trends, risks and strategic implications for Canada",E-commerce,Canada,2024-2026,"Amazon, Walmart, Flipkart, Shopify, Alibaba",proposal,deep dive,running
+req-0461,Assess fintech risk & exposure in Southeast Asia from 2022 to 2026,FinTech,Southeast Asia,2022-2026,"Razorpay, PhonePe, Adyen, PayPal",internal review,deep dive,running
+req-0462,Analyze cloud computing competitive landscape and partnerships in Southeast Asia,Cloud Computing,Southeast Asia,2022-2026,"Google Cloud, IBM",proposal,standard,completed
+req-0463,"Monitor automotive trends, risks and strategic implications for India",Automotive,India,2023-2026,"Toyota, Volkswagen, Hyundai",workshop,standard,pending
+req-0464,Evaluate automotive market entry and growth opportunities in Japan,Automotive,Japan,2022-2026,"Volkswagen, Hyundai, Toyota",internal review,detailed,completed
+req-0465,Analyze automotive competitive landscape and partnerships in Japan,Automotive,Japan,2025-2026,"BMW, Toyota, Volkswagen, Tesla",internal review,deep dive,running
+req-0466,Analyze cloud computing competitive landscape and customer behavior in Canada,Cloud Computing,Canada,2025-2026,"AWS, Microsoft Azure, IBM",strategy brief,deep dive,completed
+req-0467,Evaluate automotive market entry and growth opportunities in United States,Automotive,United States,2025-2026,"Toyota, Tesla",workshop,detailed,completed
+req-0468,Evaluate e-commerce market entry and growth opportunities in Southeast Asia,E-commerce,Southeast Asia,2025-2026,"Shopify, Walmart, Flipkart, Alibaba",internal review,detailed,completed
+req-0469,Evaluate automotive market entry and growth opportunities in Canada,Automotive,Canada,2023-2026,"Volkswagen, Hyundai",internal review,detailed,completed
+req-0470,Evaluate generative ai market entry and growth opportunities in Global,Generative AI,Global,2025-2026,"Anthropic, Meta, Microsoft, OpenAI, Google",internal review,deep dive,completed
+req-0471,Evaluate semiconductors market entry and growth opportunities in Europe,Semiconductors,Europe,2024-2026,"Samsung, NVIDIA, TSMC",internal review,detailed,completed
+req-0472,"Monitor automotive trends, risks and strategic implications for Europe",Automotive,Europe,2025-2026,"Volkswagen, Toyota",strategy brief,detailed,completed
+req-0473,Analyze healthcare technology competitive landscape and product launches in Europe,Healthcare Technology,Europe,2023-2026,"Philips, Medtronic",workshop,deep dive,running
+req-0474,"Monitor cybersecurity trends, risks and strategic implications for Australia",Cybersecurity,Australia,2025-2026,"Microsoft, Palo Alto Networks, Cisco",strategy brief,standard,completed
+req-0475,Analyze cloud computing competitive landscape and investment trends in Middle East,Cloud Computing,Middle East,2022-2026,"Microsoft Azure, IBM, AWS, Google Cloud",strategy brief,deep dive,pending
+req-0476,Evaluate industrial automation market entry and growth opportunities in India,Industrial Automation,India,2025-2026,"ABB, Siemens, Schneider Electric, Honeywell",proposal,deep dive,completed
+req-0477,"Monitor electric vehicles trends, risks and strategic implications for United Kingdom",Electric Vehicles,United Kingdom,2023-2026,"Mahindra, Hyundai, MG Motor India",strategy brief,deep dive,pending
+req-0478,Analyze fintech competitive landscape and working capital in United States,FinTech,United States,2024-2026,"Adyen, Stripe, PayPal",proposal,detailed,completed
+req-0479,"Monitor healthcare technology trends, risks and strategic implications for United Kingdom",Healthcare Technology,United Kingdom,2025-2026,"GE HealthCare, Philips, Medtronic, Abbott, Siemens Healthineers",internal review,deep dive,completed
+req-0480,Assess fintech value leakage in United Kingdom from 2022 to 2026,FinTech,United Kingdom,2022-2026,"Adyen, Stripe",proposal,detailed,pending
+req-0481,"Monitor electric vehicles trends, risks and strategic implications for Canada",Electric Vehicles,Canada,2024-2026,"Mahindra, Tata Motors, MG Motor India, BYD",proposal,deep dive,completed
+req-0482,Analyze consumer goods competitive landscape and product launches in India,Consumer Goods,India,2025-2026,"Coca-Cola, Nestle, Unilever, PepsiCo, P&G",proposal,standard,completed
+req-0483,"Monitor automotive trends, risks and strategic implications for Southeast Asia",Automotive,Southeast Asia,2023-2026,"Hyundai, Tesla, Toyota, Volkswagen",internal review,detailed,completed
+req-0484,Analyze fintech competitive landscape and value leakage in Global,FinTech,Global,2025-2026,"Razorpay, PhonePe, PayPal, Stripe, Adyen",proposal,detailed,running
+req-0485,"Monitor automotive trends, risks and strategic implications for Middle East",Automotive,Middle East,2025-2026,"Volkswagen, Hyundai, BMW",strategy brief,detailed,completed
+req-0486,Analyze banking competitive landscape and market size in Japan,Banking,Japan,2025-2026,"HDFC Bank, HSBC",proposal,deep dive,pending
+req-0487,Evaluate generative ai market entry and growth opportunities in Canada,Generative AI,Canada,2024-2026,"OpenAI, Google",workshop,standard,completed
+req-0488,Analyze consumer goods competitive landscape and supply chain in United States,Consumer Goods,United States,2024-2026,"P&G, Unilever, Nestle, PepsiCo",strategy brief,standard,completed
+req-0489,Assess e-commerce partnerships in Global from 2023 to 2026,E-commerce,Global,2023-2026,"Alibaba, Amazon, Walmart, Shopify",strategy brief,detailed,completed
+req-0490,Evaluate automotive market entry and growth opportunities in India,Automotive,India,2024-2026,"BMW, Toyota, Hyundai",internal review,deep dive,completed
+req-0491,Assess automotive regulation in Australia from 2024 to 2026,Automotive,Australia,2024-2026,"Volkswagen, Toyota, Hyundai, Tesla",strategy brief,standard,completed
+req-0492,"Monitor electric vehicles trends, risks and strategic implications for United States",Electric Vehicles,United States,2022-2026,"Tata Motors, Mahindra, MG Motor India",strategy brief,detailed,completed
+req-0493,"Monitor fintech trends, risks and strategic implications for Middle East",FinTech,Middle East,2023-2026,"Stripe, Adyen",proposal,detailed,completed
+req-0494,Evaluate consumer goods market entry and growth opportunities in United Kingdom,Consumer Goods,United Kingdom,2023-2026,"PepsiCo, Coca-Cola",strategy brief,standard,completed
+req-0495,Analyze fintech competitive landscape and competitor movement in Japan,FinTech,Japan,2025-2026,"Adyen, Razorpay",workshop,deep dive,completed
+req-0496,"Monitor cybersecurity trends, risks and strategic implications for Southeast Asia",Cybersecurity,Southeast Asia,2022-2026,"Microsoft, Fortinet",strategy brief,deep dive,completed
+req-0497,"Monitor banking trends, risks and strategic implications for Europe",Banking,Europe,2025-2026,"JPMorgan Chase, HSBC",strategy brief,detailed,completed
+req-0498,Evaluate fintech market entry and growth opportunities in Australia,FinTech,Australia,2023-2026,"Adyen, PayPal, PhonePe, Razorpay",internal review,standard,completed
+req-0499,Assess automotive competitor movement in United States from 2023 to 2026,Automotive,United States,2023-2026,"Hyundai, Toyota",proposal,deep dive,completed
+req-0500,Assess telecom competitor movement in United Kingdom from 2022 to 2026,Telecom,United Kingdom,2022-2026,"Bharti Airtel, Verizon, AT&T, Reliance Jio, Vodafone Idea",workshop,deep dive,pending

@@ -1,0 +1,76 @@
+market,year,signal_index,adoption_percent
+Electric Vehicles,2022,224.6,47
+Electric Vehicles,2023,239.0,39
+Electric Vehicles,2024,278.5,95
+Electric Vehicles,2025,329.9,50
+Electric Vehicles,2026,363.8,89
+Generative AI,2022,200.2,59
+Generative AI,2023,228.0,67
+Generative AI,2024,271.4,33
+Generative AI,2025,331.0,34
+Generative AI,2026,399.5,18
+Cloud Computing,2022,139.0,56
+Cloud Computing,2023,151.2,84
+Cloud Computing,2024,168.2,88
+Cloud Computing,2025,200.5,16
+Cloud Computing,2026,240.3,41
+Semiconductors,2022,221.7,39
+Semiconductors,2023,241.9,38
+Semiconductors,2024,254.8,24
+Semiconductors,2025,273.5,34
+Semiconductors,2026,315.9,85
+FinTech,2022,91.8,37
+FinTech,2023,107.3,69
+FinTech,2024,120.2,15
+FinTech,2025,140.9,74
+FinTech,2026,166.3,53
+Renewable Energy,2022,143.0,55
+Renewable Energy,2023,167.5,54
+Renewable Energy,2024,197.5,63
+Renewable Energy,2025,228.6,80
+Renewable Energy,2026,277.2,78
+Healthcare Technology,2022,134.3,71
+Healthcare Technology,2023,144.5,66
+Healthcare Technology,2024,157.4,81
+Healthcare Technology,2025,177.2,87
+Healthcare Technology,2026,210.7,78
+E-commerce,2022,141.8,76
+E-commerce,2023,150.2,40
+E-commerce,2024,162.1,71
+E-commerce,2025,171.7,60
+E-commerce,2026,186.5,94
+Cybersecurity,2022,183.2,87
+Cybersecurity,2023,208.1,88
+Cybersecurity,2024,229.4,86
+Cybersecurity,2025,259.0,54
+Cybersecurity,2026,297.2,79
+Telecom,2022,86.3,86
+Telecom,2023,99.9,31
+Telecom,2024,107.3,64
+Telecom,2025,129.6,88
+Telecom,2026,145.2,56
+Automotive,2022,148.4,44
+Automotive,2023,174.9,93
+Automotive,2024,194.1,90
+Automotive,2025,220.5,72
+Automotive,2026,267.4,61
+Logistics,2022,103.6,57
+Logistics,2023,111.2,34
+Logistics,2024,129.2,27
+Logistics,2025,143.5,60
+Logistics,2026,168.5,28
+Banking,2022,90.3,71
+Banking,2023,106.9,76
+Banking,2024,126.7,18
+Banking,2025,135.0,44
+Banking,2026,161.4,52
+Consumer Goods,2022,138.9,21
+Consumer Goods,2023,162.5,41
+Consumer Goods,2024,178.7,77
+Consumer Goods,2025,197.5,47
+Consumer Goods,2026,221.0,67
+Industrial Automation,2022,132.2,79
+Industrial Automation,2023,141.4,69
+Industrial Automation,2024,150.3,65
+Industrial Automation,2025,164.7,51
+Industrial Automation,2026,174.4,32
