@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
@@ -15,8 +15,13 @@ from services.dataset import DatasetStore
 from database.db import db_enabled, fetch_all, session
 from services.providers import search_provider_status
 from sqlalchemy import text
+from services.auth import init_auth_tables, register as auth_register, login as auth_login, current_user, logout as auth_logout, require_owner
 
-app = FastAPI(title="AI Market Research & Strategy Engine", version="1.1.0")
+app = FastAPI(title="AI Market Research & Strategy Engine", version="1.2.0")
+
+@app.on_event("startup")
+def startup_auth():
+    init_auth_tables()
 
 app.add_middleware(
     CORSMiddleware,
@@ -28,6 +33,109 @@ app.add_middleware(
 
 service = ResearchService()
 dataset = DatasetStore()
+
+
+class RegisterRequest(BaseModel):
+    user_id: str = Field(min_length=3, max_length=80)
+    full_name: str = Field(min_length=2, max_length=120)
+    email: str = Field(min_length=5, max_length=200)
+    password: str = Field(min_length=6, max_length=200)
+
+class LoginRequest(BaseModel):
+    user_id: str
+    password: str
+
+def bearer_token(authorization: str = ""):
+    return authorization[7:].strip() if authorization.lower().startswith("bearer ") else ""
+
+@app.post("/api/auth/register")
+def auth_register_endpoint(req: RegisterRequest):
+    try:
+        user=auth_register(req.user_id, req.full_name, req.email, req.password)
+        return {"user":user}
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
+
+@app.post("/api/auth/login")
+def auth_login_endpoint(req: LoginRequest):
+    try:
+        token,user=auth_login(req.user_id, req.password)
+        return {"token":token,"user":user}
+    except ValueError as exc:
+        raise HTTPException(status_code=401, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
+
+@app.get("/api/auth/me")
+def auth_me(authorization: str = Header("")):
+    user=current_user(bearer_token(authorization))
+    if not user:
+        raise HTTPException(status_code=401, detail="Session expired or invalid.")
+    return {"user":user}
+
+@app.post("/api/auth/logout")
+def auth_logout_endpoint(authorization: str = Header("")):
+    auth_logout(bearer_token(authorization))
+    return {"ok":True}
+
+class ProfileUpdateRequest(BaseModel):
+    full_name: str = Field(min_length=2, max_length=120)
+    email: str = Field(min_length=5, max_length=200)
+
+@app.patch("/api/auth/profile")
+def auth_profile(req: ProfileUpdateRequest, authorization: str = Header("")):
+    token=bearer_token(authorization)
+    user=current_user(token)
+    if not user:
+        raise HTTPException(status_code=401, detail="Session expired or invalid.")
+    try:
+        with session() as c:
+            exists=c.execute(text("select 1 from app_users where lower(email)=lower(:email) and user_id<>:uid"),{"email":req.email.strip(),"uid":user["userId"]}).first()
+            if exists: raise ValueError("That email address is already registered.")
+            c.execute(text("update app_users set full_name=:name,email=:email where user_id=:uid"),
+                      {"name":req.full_name.strip(),"email":req.email.strip().lower(),"uid":user["userId"]})
+            row=c.execute(text("select * from app_users where user_id=:uid"),{"uid":user["userId"]}).mappings().first()
+            return {"user": {
+                "userId":row["user_id"],"name":row["full_name"],"email":row["email"],"role":row["role"],
+                "status":row["status"],"createdAt":row["created_at"].isoformat() if row["created_at"] else None,
+                "lastLogin":row["last_login"].isoformat() if row["last_login"] else None
+            }}
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+
+@app.get("/api/admin/users")
+def admin_users(authorization: str = Header("")):
+    require_owner(bearer_token(authorization))
+    rows=fetch_all("""select user_id,full_name,email,role,status,created_at,approved_at,last_login
+                      from app_users order by created_at desc""")
+    return {"items":[dict(r) for r in rows]}
+
+@app.post("/api/admin/users/{user_id}/suspend")
+def admin_suspend(user_id: str, authorization: str = Header("")):
+    owner=require_owner(bearer_token(authorization))
+    if user_id == owner["userId"]:
+        raise HTTPException(status_code=400, detail="The permanent owner cannot be suspended.")
+    with session() as c:
+        c.execute(text("update app_users set status='suspended' where user_id=:uid and role<>'Owner'"),{"uid":user_id})
+    return {"ok":True}
+
+@app.post("/api/admin/users/{user_id}/reactivate")
+def admin_reactivate(user_id: str, authorization: str = Header("")):
+    require_owner(bearer_token(authorization))
+    with session() as c:
+        c.execute(text("update app_users set status='active', approved_at=coalesce(approved_at,now()) where user_id=:uid"),{"uid":user_id})
+    return {"ok":True}
+
+@app.delete("/api/admin/users/{user_id}")
+def admin_delete(user_id: str, authorization: str = Header("")):
+    owner=require_owner(bearer_token(authorization))
+    if user_id == owner["userId"]:
+        raise HTTPException(status_code=400, detail="The permanent owner cannot be deleted.")
+    with session() as c:
+        c.execute(text("delete from app_users where user_id=:uid and role<>'Owner'"),{"uid":user_id})
+    return {"ok":True}
 
 
 class ResearchRequest(BaseModel):

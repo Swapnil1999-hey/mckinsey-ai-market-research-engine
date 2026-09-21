@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: mckinsey-ai-research-engine-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: DATA_SOURCE
+        value: database
+      - key: EMBEDDING_DIM
+        value: 1536
+      - key: CORS_ORIGINS
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: OWNER_USER_ID
+        sync: false
+      - key: OWNER_NAME
+        sync: false
+      - key: OWNER_EMAIL
+        sync: false
+      - key: OWNER_PASSWORD
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: SERPER_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: FIRECRAWL_API_KEY
+        sync: false

@@ -102,3 +102,26 @@ create table if not exists research_feedback (
   notes text default '',
   created_at timestamptz default now()
 );
+
+-- Centralized cross-device authentication
+create table if not exists app_users (
+  id uuid primary key default gen_random_uuid(),
+  user_id text unique not null,
+  full_name text not null,
+  email text unique not null,
+  password_hash text not null,
+  role text not null default 'Researcher',
+  status text not null default 'active',
+  created_at timestamptz not null default now(),
+  approved_at timestamptz,
+  last_login timestamptz
+);
+create table if not exists app_sessions (
+  id uuid primary key default gen_random_uuid(),
+  token_hash text unique not null,
+  user_id text not null references app_users(user_id) on delete cascade,
+  created_at timestamptz not null default now(),
+  expires_at timestamptz not null
+);
+create index if not exists idx_app_sessions_token on app_sessions(token_hash);
+create index if not exists idx_app_users_status on app_users(status);
