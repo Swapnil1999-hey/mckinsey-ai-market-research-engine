@@ -98,28 +98,70 @@ def register(user_id: str, full_name: str, email: str, password: str):
 
 def login(user_id: str, password: str):
     with session() as c:
-        row=c.execute(text("select * from app_users where lower(user_id)=lower(:uid)"),{"uid":user_id.strip()}).mappings().first()
+        row = c.execute(
+            text("""
+                select id, user_id, full_name, email, password_hash,
+                       role, status, created_at, last_login
+                from app_users
+                where lower(user_id)=lower(:uid)
+            """),
+            {"uid": user_id.strip()}
+        ).mappings().first()
+
         if not row or not _verify_password(password, row["password_hash"]):
             raise ValueError("Invalid User ID or password.")
+
         if row["status"] != "active":
             raise ValueError(f"Account is {row['status']}.")
-        token=secrets.token_urlsafe(48)
-        expires=datetime.now(timezone.utc)+timedelta(days=SESSION_DAYS)
-        token_hash=hashlib.sha256(token.encode()).hexdigest()
-        c.execute(text("insert into app_sessions(token_hash,user_id,expires_at) values(:th,:uid,:exp)"),
-                  {"th":token_hash,"uid":row["user_id"],"exp":expires})
-        c.execute(text("update app_users set last_login=now() where user_id=:uid"),{"uid":row["user_id"]})
+
+        token = secrets.token_urlsafe(48)
+        expires = datetime.now(timezone.utc) + timedelta(days=SESSION_DAYS)
+        token_hash = hashlib.sha256(token.encode()).hexdigest()
+
+        # IMPORTANT:
+        # app_sessions.user_id is UUID, so use app_users.id
+        c.execute(
+            text("""
+                insert into app_sessions(token_hash, user_id, expires_at)
+                values(:th, :uid, :exp)
+            """),
+            {
+                "th": token_hash,
+                "uid": row["id"],
+                "exp": expires
+            }
+        )
+
+        c.execute(
+            text("""
+                update app_users
+                set last_login=now()
+                where id=:uid
+            """),
+            {"uid": row["id"]}
+        )
+
         return token, _user(row)
 
 def current_user(token: str):
     if not token:
         return None
-    th=hashlib.sha256(token.encode()).hexdigest()
-    with session() as c:
-        row=c.execute(text("""select u.* from app_sessions s join app_users u on u.user_id=s.user_id
-                              where s.token_hash=:th and s.expires_at>now()"""),{"th":th}).mappings().first()
-        return _user(row)
 
+    th = hashlib.sha256(token.encode()).hexdigest()
+
+    with session() as c:
+        row = c.execute(
+            text("""
+                select u.*
+                from app_sessions s
+                join app_users u on u.id=s.user_id
+                where s.token_hash=:th
+                  and s.expires_at>now()
+            """),
+            {"th": th}
+        ).mappings().first()
+
+        return _user(row)
 def logout(token: str):
     if not token:
         return
