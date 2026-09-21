@@ -162,6 +162,19 @@ def admin_delete(user_id: str, authorization: str = Header("")):
     return {"ok":True}
 
 
+@app.post("/api/admin/users/{user_id}/sessions/revoke")
+def admin_revoke_sessions(user_id: str, authorization: str = Header("")):
+    owner = require_owner(bearer_token(authorization))
+    if user_id == owner["userId"]:
+        raise HTTPException(status_code=400, detail="The permanent owner cannot have all sessions revoked from this control.")
+    with session() as c:
+        row = c.execute(text("select user_id from app_users where user_id=:uid"), {"uid": user_id}).first()
+        if not row:
+            raise HTTPException(status_code=404, detail="User not found")
+        c.execute(text("delete from app_sessions where user_id=:uid"), {"uid": user_id})
+    return {"ok": True, "message": f"All sessions revoked for {user_id}."}
+
+
 class ResearchRequest(BaseModel):
     query: str = Field(min_length=5)
     market: str = ""
