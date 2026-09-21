@@ -14,8 +14,11 @@ type Account={userId:string;name:string;email:string;role:string;status?:string;
 const SESSION_KEY='mcx_server_session_v2';
 const THEME_KEY='mcx_theme_v1';
 
-function apiHeaders(token?:string){
-  return token ? {'Authorization':`Bearer ${token}`} : {};
+function apiHeaders(token?: string): Record<string, string> {
+  if (!token) return {};
+  return {
+    Authorization: `Bearer ${token}`,
+  };
 }
 function AuthScreen({onLogin}:{onLogin:(a:Account)=>void}){
  const [mode,setMode]=useState<'login'|'create'>('login'); const [userId,setUserId]=useState(''); const [password,setPassword]=useState(''); const [name,setName]=useState(''); const [email,setEmail]=useState(''); const [show,setShow]=useState(false); const [error,setError]=useState(''); const [busy,setBusy]=useState(false);
