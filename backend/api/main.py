@@ -1,4 +1,5 @@
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, HTTPException, Header, Depends
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
@@ -18,6 +19,7 @@ from sqlalchemy import text
 from services.auth import init_auth_tables, register as auth_register, login as auth_login, current_user, logout as auth_logout, require_owner
 
 app = FastAPI(title="AI Market Research & Strategy Engine", version="1.2.0")
+bearer_scheme = HTTPBearer(auto_error=False)
 
 @app.on_event("startup")
 def startup_auth():
@@ -69,16 +71,38 @@ def auth_login_endpoint(req: LoginRequest):
         raise HTTPException(status_code=503, detail=str(exc))
 
 @app.get("/api/auth/me")
-def auth_me(authorization: str = Header("")):
-    user=current_user(bearer_token(authorization))
+def auth_me(
+    credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)
+):
+    if not credentials:
+        raise HTTPException(
+            status_code=401,
+            detail="Authentication required."
+        )
+
+    user = current_user(credentials.credentials)
+
     if not user:
-        raise HTTPException(status_code=401, detail="Session expired or invalid.")
-    return {"user":user}
+        raise HTTPException(
+            status_code=401,
+            detail="Session expired or invalid."
+        )
+
+    return {"user": user}
 
 @app.post("/api/auth/logout")
-def auth_logout_endpoint(authorization: str = Header("")):
-    auth_logout(bearer_token(authorization))
-    return {"ok":True}
+def auth_logout_endpoint(
+    credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)
+):
+    if not credentials:
+        raise HTTPException(
+            status_code=401,
+            detail="Authentication required."
+        )
+
+    auth_logout(credentials.credentials)
+
+    return {"ok": True}
 
 class ProfileUpdateRequest(BaseModel):
     full_name: str = Field(min_length=2, max_length=120)
