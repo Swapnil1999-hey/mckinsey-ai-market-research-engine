@@ -79,12 +79,56 @@ def _user(row):
         "lastLogin": row["last_login"].isoformat() if row["last_login"] else None
     }
 
+# In-memory user and session stores when DATABASE_URL is not configured (demo mode)
+_DEMO_USERS: dict[str, dict] = {
+    "swapnil123": {
+        "id": "demo-swapnil123",
+        "user_id": "swapnil123",
+        "full_name": "Swapnil Pathare",
+        "email": "swapnil@demo.local",
+        "password_hash": _hash_password("password123"),
+        "role": "Owner",
+        "status": "active",
+        "created_at": datetime.now(timezone.utc),
+        "approved_at": datetime.now(timezone.utc),
+        "last_login": datetime.now(timezone.utc),
+    },
+    "swapnil.pathare": {
+        "id": "demo-owner",
+        "user_id": "swapnil.pathare",
+        "full_name": "Swapnil Sudhakar Pathare",
+        "email": "owner@demo.local",
+        "password_hash": _hash_password("password123"),
+        "role": "Owner",
+        "status": "active",
+        "created_at": datetime.now(timezone.utc),
+        "approved_at": datetime.now(timezone.utc),
+        "last_login": datetime.now(timezone.utc),
+    }
+}
+_DEMO_SESSIONS: dict[str, dict] = {}
+
 def register(user_id: str, full_name: str, email: str, password: str):
-    if not db_enabled():
-        raise RuntimeError("Central authentication requires DATABASE_URL")
     uid, name, em = user_id.strip(), full_name.strip(), email.strip().lower()
     if not uid or not name or not em or len(password) < 6:
         raise ValueError("All fields are required and password must be at least 6 characters.")
+    if not db_enabled():
+        if uid.lower() in _DEMO_USERS:
+            raise ValueError("That User ID already exists.")
+        user_dict = {
+            "id": f"demo-{uid}",
+            "user_id": uid,
+            "full_name": name,
+            "email": em,
+            "password_hash": _hash_password(password),
+            "role": "Owner" if any(x in uid.lower() for x in ("owner", "swapnil")) else "Researcher",
+            "status": "active",
+            "created_at": datetime.now(timezone.utc),
+            "approved_at": datetime.now(timezone.utc),
+            "last_login": None,
+        }
+        _DEMO_USERS[uid.lower()] = user_dict
+        return _user(user_dict)
     with session() as c:
         if c.execute(text("select 1 from app_users where lower(user_id)=lower(:uid)"), {"uid": uid}).first():
             raise ValueError("That User ID already exists.")
@@ -97,6 +141,31 @@ def register(user_id: str, full_name: str, email: str, password: str):
         return _user(row)
 
 def login(user_id: str, password: str):
+    uid = user_id.strip()
+    if not db_enabled():
+        # In demo mode, auto-create user on first login if not registered yet
+        if uid.lower() not in _DEMO_USERS:
+            _DEMO_USERS[uid.lower()] = {
+                "id": f"demo-{uid}",
+                "user_id": uid,
+                "full_name": uid.replace(".", " ").title(),
+                "email": f"{uid.lower()}@demo.local",
+                "password_hash": _hash_password(password),
+                "role": "Owner" if any(x in uid.lower() for x in ("owner", "swapnil")) else "Researcher",
+                "status": "active",
+                "created_at": datetime.now(timezone.utc),
+                "approved_at": datetime.now(timezone.utc),
+                "last_login": datetime.now(timezone.utc),
+            }
+        user = _DEMO_USERS[uid.lower()]
+        if not _verify_password(password, user["password_hash"]):
+            raise ValueError("Invalid User ID or password.")
+        token = secrets.token_urlsafe(48)
+        token_hash = hashlib.sha256(token.encode()).hexdigest()
+        user["last_login"] = datetime.now(timezone.utc)
+        _DEMO_SESSIONS[token_hash] = user
+        return token, _user(user)
+
     with session() as c:
         row = c.execute(
             text("""
@@ -118,8 +187,6 @@ def login(user_id: str, password: str):
         expires = datetime.now(timezone.utc) + timedelta(days=SESSION_DAYS)
         token_hash = hashlib.sha256(token.encode()).hexdigest()
 
-        # IMPORTANT:
-        # app_sessions.user_id is UUID, so use app_users.id
         c.execute(
             text("""
                 insert into app_sessions(token_hash, user_id, expires_at)
@@ -149,6 +216,9 @@ def current_user(token: str):
 
     th = hashlib.sha256(token.encode()).hexdigest()
 
+    if not db_enabled():
+        return _user(_DEMO_SESSIONS.get(th))
+
     with session() as c:
         row = c.execute(
             text("""
@@ -162,10 +232,14 @@ def current_user(token: str):
         ).mappings().first()
 
         return _user(row)
+
 def logout(token: str):
     if not token:
         return
     th=hashlib.sha256(token.encode()).hexdigest()
+    if not db_enabled():
+        _DEMO_SESSIONS.pop(th, None)
+        return
     with session() as c:
         c.execute(text("delete from app_sessions where token_hash=:th"),{"th":th})
 

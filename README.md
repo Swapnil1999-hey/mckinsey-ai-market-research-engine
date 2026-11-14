@@ -1144,6 +1144,17 @@ Session tokens are stored as hashes rather than raw session tokens.
 
 The main API is served by FastAPI.
 
+## Smart query interface (new)
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| `GET` | `/api/classify` | Classify any query as market-research relevant or irrelevant |
+| `POST` | `/api/ask` | Universal smart endpoint: answers irrelevant questions helpfully; runs full research pipeline for valid questions |
+
+**Irrelevant categories handled:** weather · date/time · sports · entertainment · personal advice · cooking · crypto trading · travel · health · general knowledge
+
+---
+
 ## Health and provider status
 
 | Method | Endpoint | Purpose |

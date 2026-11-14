@@ -53,3 +53,11 @@ html[data-theme='dark'] .strategy-report{background:#0b2232;border-color:#1c3b4d
 .memory-number{display:block;font-size:30px;margin:6px 0;color:#0d2d45}.memory-card button{display:inline-flex;align-items:center;gap:5px}
 [data-theme="dark"] .data-chart-card{background:#0d2a3e;border-color:#21445c}.data-chart-card .eyebrow{color:#60788b}.data-chart-card .chart-label{fill:#a8bac8}.dynamic-bar-row>div{background:#1a3b52}.dataset-note{background:#edf4f9}
 @media(max-width:900px){.data-chart-grid{grid-template-columns:1fr}.dynamic-bar-row{grid-template-columns:110px 1fr 44px}.filter-bar input{min-width:100%}}
+
+/* Irrelevant question banner */
+.irrelevant-banner { background: var(--surface, #f8f9fa); border: 1.5px solid var(--border, #e2e8f0); border-left: 4px solid #f59e0b; border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
+.irrelevant-banner .banner-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+.irrelevant-banner .banner-dismiss { margin-left: auto; background: none; border: none; cursor: pointer; opacity: 0.5; padding: 2px; }
+.irrelevant-banner .banner-dismiss:hover { opacity: 1; }
+.irrelevant-banner .banner-answer { font-size: 0.88rem; line-height: 1.6; white-space: pre-line; color: var(--text-secondary, #555); margin-bottom: 8px; }
+.irrelevant-banner .banner-redirect { font-size: 0.8rem; font-style: italic; color: var(--text-muted, #888); }

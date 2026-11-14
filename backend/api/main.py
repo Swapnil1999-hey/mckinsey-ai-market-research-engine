@@ -1,4 +1,9 @@
-from fastapi import FastAPI, HTTPException, Header, Depends
+from fastapi import FastAPI, HTTPException, Header, Depends, Request as FastAPIRequest
+from collections import defaultdict
+import time as _time
+_ask_calls: dict = defaultdict(list)
+_ASK_RATE_LIMIT = 10   # max calls per window
+_ASK_WINDOW_SEC = 60   # 60-second rolling window
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -17,6 +22,7 @@ from database.db import db_enabled, fetch_all, session
 from services.providers import search_provider_status
 from sqlalchemy import text
 from services.auth import init_auth_tables, register as auth_register, login as auth_login, current_user, logout as auth_logout, require_owner
+from services.irrelevant_question import classify_query, irrelevant_answer
 
 app = FastAPI(title="AI Market Research & Strategy Engine", version="1.2.0")
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -114,6 +120,10 @@ def auth_profile(req: ProfileUpdateRequest, authorization: str = Header("")):
     user=current_user(token)
     if not user:
         raise HTTPException(status_code=401, detail="Session expired or invalid.")
+    if not db_enabled():
+        user["name"] = req.full_name.strip()
+        user["email"] = req.email.strip().lower()
+        return {"user": user}
     try:
         with session() as c:
             exists=c.execute(text("select 1 from app_users where lower(email)=lower(:email) and user_id<>:uid"),{"email":req.email.strip(),"uid":user["userId"]}).first()
@@ -132,6 +142,16 @@ def auth_profile(req: ProfileUpdateRequest, authorization: str = Header("")):
 @app.get("/api/admin/users")
 def admin_users(authorization: str = Header("")):
     require_owner(bearer_token(authorization))
+    if not db_enabled():
+        from services.auth import _DEMO_USERS
+        return {"items": [
+            {"user_id": u["user_id"], "full_name": u["full_name"], "email": u["email"],
+             "role": u["role"], "status": u["status"],
+             "created_at": u["created_at"].isoformat() if u["created_at"] else None,
+             "approved_at": u["approved_at"].isoformat() if u.get("approved_at") else None,
+             "last_login": u["last_login"].isoformat() if u.get("last_login") else None}
+            for u in _DEMO_USERS.values()
+        ]}
     rows=fetch_all("""select user_id,full_name,email,role,status,created_at,approved_at,last_login
                       from app_users order by created_at desc""")
     return {"items":[dict(r) for r in rows]}
@@ -141,6 +161,8 @@ def admin_suspend(user_id: str, authorization: str = Header("")):
     owner=require_owner(bearer_token(authorization))
     if user_id == owner["userId"]:
         raise HTTPException(status_code=400, detail="The permanent owner cannot be suspended.")
+    if not db_enabled():
+        return {"ok":True}
     with session() as c:
         c.execute(text("update app_users set status='suspended' where user_id=:uid and role<>'Owner'"),{"uid":user_id})
     return {"ok":True}
@@ -148,6 +170,8 @@ def admin_suspend(user_id: str, authorization: str = Header("")):
 @app.post("/api/admin/users/{user_id}/reactivate")
 def admin_reactivate(user_id: str, authorization: str = Header("")):
     require_owner(bearer_token(authorization))
+    if not db_enabled():
+        return {"ok":True}
     with session() as c:
         c.execute(text("update app_users set status='active', approved_at=coalesce(approved_at,now()) where user_id=:uid"),{"uid":user_id})
     return {"ok":True}
@@ -157,6 +181,10 @@ def admin_delete(user_id: str, authorization: str = Header("")):
     owner=require_owner(bearer_token(authorization))
     if user_id == owner["userId"]:
         raise HTTPException(status_code=400, detail="The permanent owner cannot be deleted.")
+    if not db_enabled():
+        from services.auth import _DEMO_USERS
+        _DEMO_USERS.pop(user_id.lower(), None)
+        return {"ok":True}
     with session() as c:
         c.execute(text("delete from app_users where user_id=:uid and role<>'Owner'"),{"uid":user_id})
     return {"ok":True}
@@ -167,6 +195,8 @@ def admin_revoke_sessions(user_id: str, authorization: str = Header("")):
     owner = require_owner(bearer_token(authorization))
     if user_id == owner["userId"]:
         raise HTTPException(status_code=400, detail="The permanent owner cannot have all sessions revoked from this control.")
+    if not db_enabled():
+        return {"ok": True, "message": f"All sessions revoked for {user_id}."}
     with session() as c:
         row = c.execute(text("select user_id from app_users where user_id=:uid"), {"uid": user_id}).first()
         if not row:
@@ -197,6 +227,23 @@ def health():
     return {"status": "ok", "database": db_enabled(), "data_source": "database" if dataset.live else "demo"}
 
 
+@app.get("/api/classify")
+def classify_endpoint(query: str):
+    """
+    Lightweight query classifier.
+    Returns whether the query is relevant to market research or irrelevant,
+    with the detected category and a preview answer for irrelevant queries.
+    Does NOT run the research pipeline.
+    """
+    if not query or not query.strip():
+        raise HTTPException(status_code=400, detail="query parameter is required")
+    verdict, category, reason = classify_query(query)
+    if verdict == "irrelevant":
+        preview = irrelevant_answer(query, category)
+        return {"verdict": verdict, "category": category, "reason": reason, "preview": preview}
+    return {"verdict": verdict, "category": category, "reason": reason}
+
+
 @app.post("/api/research-jobs")
 def create_job(req: ResearchRequest):
     jid = str(uuid4())
@@ -209,6 +256,56 @@ def run_research(req: ResearchRequest):
     service.create(jid, req.model_dump())
     try:
         return service.run_full(jid)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
+
+# ---------------------------------------------------------------------------
+# Smart Q&A endpoint — handles both research questions AND irrelevant queries
+# ---------------------------------------------------------------------------
+
+def _check_rate_limit(client_ip: str):
+    now = _time.time()
+    window_start = now - _ASK_WINDOW_SEC
+    _ask_calls[client_ip] = [t for t in _ask_calls[client_ip] if t > window_start]
+    if len(_ask_calls[client_ip]) >= _ASK_RATE_LIMIT:
+        raise HTTPException(status_code=429, detail=f"Rate limit exceeded: max {_ASK_RATE_LIMIT} requests per {_ASK_WINDOW_SEC}s. Please wait before submitting another query.")
+    _ask_calls[client_ip].append(now)
+
+class AskRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=2000)
+
+
+@app.post("/api/ask")
+def ask(req: AskRequest, request: FastAPIRequest):
+    """
+    Universal entry point for user questions.
+
+    - If the question is market-research related, it creates and runs a full
+      research job and returns the result.
+    - If the question is irrelevant (weather, sports, date/time, etc.),
+      it returns a helpful answer and politely redirects the user.
+    """
+    _check_rate_limit(request.client.host if request.client else "unknown")
+    verdict, category, reason = classify_query(req.query)
+
+    if verdict == "irrelevant":
+        return irrelevant_answer(req.query, category)
+
+    # Market-research question → run full pipeline
+    jid = str(uuid4())
+    service.create(jid, {
+        "query": req.query,
+        "market": "",
+        "geography": "",
+        "timeframe": "",
+        "competitors": [],
+        "output_format": "internal review",
+        "report_depth": "standard",
+    })
+    try:
+        result = service.run_full(jid)
+        return {"is_irrelevant": False, "category": "market_research", "result": result}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 
