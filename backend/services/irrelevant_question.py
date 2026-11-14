@@ -141,6 +141,20 @@ _IRRELEVANT_PATTERNS: list[tuple[str, list[str]]] = [
             r"\bhome remedy\b",
         ],
     ),
+    (
+        "platform_qa",
+        [
+            r"\b(temporary\s+)?workaround(s)?\b",
+            r"\blegacy\s+habit(s)?\b",
+            r"\badopt(ing)?\s+(your|this)\s+(solution|platform|system|engine|tool)\b",
+            r"\binstead\s+of\s+adopting\b",
+            r"\bwhat\s+(are\s+the\s+)?(temporary\s+)?workarounds?\b",
+            r"\bwhat\s+(are\s+the\s+)?legacy\s+habits?\b",
+            r"\bhow\s+does\s+(this|your)\s+(engine|platform|tool|solution)\s+work\b",
+            r"\bwhy\s+use\s+(this|your)\s+(platform|engine|solution)\b",
+            r"\bwhat\s+problem\s+does\s+(this|your)\s+(platform|engine|solution)\s+solve\b",
+        ],
+    ),
 ]
 
 # ---------------------------------------------------------------------------
@@ -320,6 +334,23 @@ def irrelevant_answer(query: str, category: str) -> dict:
             f"⚠️ **Please consult a qualified doctor or pharmacist** for health concerns.\n\n"
             f"I *can* help you research the **healthcare market landscape**, "
             f"hospital sector trends, or health-tech competitors if that's useful!"
+        )
+
+    elif category == "platform_qa":
+        answer = (
+            "💡 **Temporary Workarounds & Legacy Habits Replaced by This Solution:**\n\n"
+            "Before adopting this platform, market analysts and strategy teams typically rely on:\n\n"
+            "1. **Manual Google Search & Copy-Paste**: Analysts manually query search engines, copy snippets into Word or Excel, and organize sources by hand (takes days to weeks with zero audit trail).\n"
+            "2. **Generic LLM Chatbots (ChatGPT/Gemini)**: Firing single-shot prompts into conversational chatbots, which frequently hallucinate market statistics, invent nonexistent citations, and lack verified web data.\n"
+            "3. **Expensive Proprietary Databases**: Purchasing high-cost subscriptions (Bloomberg, Statista, Euromonitor at $10k–$100k+/year) that remain isolated from the strategy synthesis workflow.\n"
+            "4. **Email & Spreadsheet Evidence Tracking**: Circulating unvalidated findings via spreadsheets or email attachments with no confidence scores or deduplication.\n"
+            "5. **Formatting Consultant Decks**: Junior analysts spending 60–80% of their billable hours formatting PowerPoint shapes instead of analyzing strategic insights.\n"
+            "6. **Reusing Outdated Templates**: Copying last quarter's slide deck with minimal updates, missing fast-moving competitive movements and regulatory shifts.\n\n"
+            "**How This Solution Solves It:**\n"
+            "• **Automated 8-Stage Pipeline**: From planning through browsing, extraction, validation, aggregation, to consultant brief generation.\n"
+            "• **Traceable Evidence**: Every single claim is linked to its exact source URL with credibility and recency scoring.\n"
+            "• **Resilient Fallback**: Graceful degradation across Firecrawl, Tavily, Serper, Knowledge Base, and demo CSV datasets.\n"
+            "• **Governed Human Review**: Mandates human review before executive or client presentations."
         )
 
     else:  # general_knowledge or unrecognised
